@@ -1,0 +1,26 @@
+@font-face {
+  font-family: Interstate-bold;
+  src: url(../fonts/Interstate-bold.ttf);
+}
+
+.proficiency {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  column-gap: 8px;
+  align-items: center;
+  border: 3px double black;
+  border-radius: 2px 10px;
+  width: min-content;
+  margin: auto;
+  padding: 3px;
+}
+
+.proficiency_title {
+  font-family: Interstate-bold;
+  font-size: medium;
+  white-space: nowrap;
+}
+
+.proficiency_value {
+  font-size: xx-large;
+}

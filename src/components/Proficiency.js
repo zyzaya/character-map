@@ -1,6 +1,7 @@
 import React from 'react';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
+import '../styles/Proficiency.css';
 
 export default function Proficiency(props) {
   function onChange(e) {
@@ -13,8 +14,12 @@ export default function Proficiency(props) {
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
       </div>
-      <label htmlFor="proficiency_value">Proficiency Bonus</label>
+      <label className="proficiency_title" htmlFor="proficiency_value">
+        Proficiency Bonus
+      </label>
       <input
+        id="proficiency_value"
+        className="proficiency_value"
         type="number"
         min="2"
         max="6"
