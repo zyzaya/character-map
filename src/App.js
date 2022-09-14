@@ -1,10 +1,10 @@
 import './App.css';
-import AbilitySection from './components/AbilitySection';
+import Sheet from './components/Sheet';
 
 function App() {
   return (
     <div className="App">
-      <AbilitySection></AbilitySection>
+      <Sheet></Sheet>
     </div>
   );
 }
