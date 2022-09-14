@@ -1,0 +1,11 @@
+.skills {
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  border-top: 1px solid black;
+}
+
+.skill {
+  display: grid;
+  grid-template-rows: repeat(3, min-content);
+}

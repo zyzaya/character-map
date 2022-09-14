@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Ability from './Ability';
 import CycleArrow from './CycleArrow';
 import AdditionalInfo from './AdditionalInfo';
+import StrengthSkills from './Skills/StrengthSkills';
 import '../styles/AbilitySection.css';
-import Skill from './Skill';
 
 export default function AbilitySection(props) {
   const [strength, setStrength] = useState(10);
@@ -12,6 +12,10 @@ export default function AbilitySection(props) {
   const [intelligence, setIntelligence] = useState(10);
   const [wisdom, setWisdom] = useState(10);
   const [charisma, setCharisma] = useState(10);
+
+  function modifier(score) {
+    return Math.floor((score - 10) / 2);
+  }
 
   return (
     <div className="ability_section">
@@ -70,12 +74,11 @@ export default function AbilitySection(props) {
         Skills
       </div>
 
-      <div className="skills">
-        <Skill
-          name="athletics"
-          modifier={2}
+      <div className="skills_section">
+        <StrengthSkills
           proficiency={props.proficiency}
-        ></Skill>
+          modifier={modifier(strength)}
+        ></StrengthSkills>
       </div>
     </div>
   );
