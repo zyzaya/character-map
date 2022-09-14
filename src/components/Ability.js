@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import AbilityModifier from './AbilityModifier';
 import AbilityScore from './AbilityScore';
 import SavingThrow from './SavingThrow';
+import '../styles/Ability.css';
 
 export default function Ability(props) {
   const [score, setScore] = useState(10);
@@ -15,7 +16,7 @@ export default function Ability(props) {
   }
 
   return (
-    <div className={props.name}>
+    <div className="ability">
       <AbilityScore
         name={props.name}
         score={score}

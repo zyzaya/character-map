@@ -12,9 +12,11 @@ export default function AbilityScore(props) {
   displayName += ` (${short})`;
 
   return (
-    <div className={`${props.name}_score`}>
-      <AdditionalInfo></AdditionalInfo>
-      <CycleArrow></CycleArrow>
+    <div className="score">
+      <div className="buttons">
+        <AdditionalInfo></AdditionalInfo>
+        <CycleArrow></CycleArrow>
+      </div>
       <label htmlFor={`${props.name}_score_input`}>{displayName}</label>
       <input
         type="number"
