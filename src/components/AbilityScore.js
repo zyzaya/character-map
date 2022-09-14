@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
 
 export default function AbilityScore(props) {
-  const [value, setValue] = useState(10);
-
   function editValue(e) {
-    setValue(e.target.value);
     props.onChange(e.target.value);
   }
 
@@ -20,7 +17,7 @@ export default function AbilityScore(props) {
         id={`${props.name}_mod`}
         min="1"
         max="30"
-        value={value}
+        value={props.value}
         onChange={editValue}
       />
     </div>
