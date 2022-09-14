@@ -1,5 +1,6 @@
 import React from 'react';
 import Ability from './Ability';
+import '../styles/AbilitySection.css';
 
 export default function AbilitySection(prop) {
   let proficiency = 2;
