@@ -16,11 +16,13 @@ export default function SavingThrow(props) {
   let displayValue = `${value >= 0 ? `+${value}` : value}`;
 
   return (
-    <div className={`${props.name}_save`}>
-      <AdditionalInfo></AdditionalInfo>
-      <CycleArrow></CycleArrow>
+    <div className="save">
+      <div className="buttons">
+        <AdditionalInfo></AdditionalInfo>
+        <CycleArrow></CycleArrow>
+      </div>
       <label htmlFor={`${props.name}_save_input`}>
-        <div>Saving Throw</div>
+        <div className="save_title">Saving Throw</div>
         <input
           type="checkbox"
           id={`${props.name}_save_input`}

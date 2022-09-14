@@ -16,16 +16,43 @@
 .score {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
+  grid-gap: 3px;
   font-size: x-large;
   padding: 10px 0;
   align-items: center;
-}
-
-.score > label {
 }
 
 .score > input {
   font-size: x-large;
   width: 48px;
   padding: 0;
+}
+
+.modifier {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
+  grid-gap: 3px;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.modifier_title {
+  justify-self: left;
+}
+
+.save {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-gap: 3px;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.save > label {
+  display: grid;
+  grid-template-columns: 1fr min-content min-content;
+}
+
+.save_title {
+  justify-self: left;
 }
