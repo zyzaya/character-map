@@ -11,9 +11,7 @@ export default function Ability(props) {
     return Math.floor((score - 10) / 2);
   }
 
-  function handleProficiencyChange(prof) {
-    console.log('unimplemented');
-  }
+  function handleProficiencyChange(prof) {}
 
   return (
     <div className="ability">

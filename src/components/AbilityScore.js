@@ -4,7 +4,7 @@ import CycleArrow from './CycleArrow';
 
 export default function AbilityScore(props) {
   function editValue(e) {
-    props.onChange(e.target.value);
+    props.onChange(parseInt(e.target.value));
   }
 
   let short = props.name.substring(0, 3).toUpperCase();

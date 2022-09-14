@@ -6,7 +6,7 @@ export default function Sheet(props) {
   const [proficiency, setProficiency] = useState(2);
 
   function handleProficiencyChange(p) {
-    setProficiency(p);
+    setProficiency(parseInt(p));
   }
 
   return (

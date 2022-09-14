@@ -11,7 +11,7 @@ export default function SavingThrow(props) {
     props.onProficiencyChanged(e.target.checked);
   }
 
-  let value = props.modifier;
+  let value = parseInt(props.modifier);
   if (proficient) value += props.proficiency;
   let displayValue = `${value >= 0 ? `+${value}` : value}`;
 
