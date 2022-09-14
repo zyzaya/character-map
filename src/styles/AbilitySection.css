@@ -22,3 +22,19 @@
   justify-content: center;
   border-top: 1px solid black;
 }
+
+.skill_section_title {
+  font-family: Interstate-bold;
+  font-size: medium;
+  margin-top: 8px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.skills {
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  border-top: 1px solid black;
+}

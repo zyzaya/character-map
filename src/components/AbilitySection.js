@@ -23,6 +23,16 @@ export default function AbilitySection(props) {
         <Ability name="wisdom" proficiency={props.proficiency}></Ability>
         <Ability name="charisma" proficiency={props.proficiency}></Ability>
       </div>
+
+      <div className="skill_section_title">
+        <div className="buttons">
+          <AdditionalInfo></AdditionalInfo>
+          <CycleArrow></CycleArrow>
+        </div>
+        Skills
+      </div>
+
+      <div className="skills"></div>
     </div>
   );
 }
