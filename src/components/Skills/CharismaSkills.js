@@ -6,7 +6,22 @@ export default function CharismaSkills(props) {
   return (
     <div className="charisma_skills skills">
       <Skill
-        name="athletics"
+        name="deception"
+        modifier={props.modifier}
+        proficiency={props.proficiency}
+      ></Skill>
+      <Skill
+        name="intimidation"
+        modifier={props.modifier}
+        proficiency={props.proficiency}
+      ></Skill>
+      <Skill
+        name="performance"
+        modifier={props.modifier}
+        proficiency={props.proficiency}
+      ></Skill>
+      <Skill
+        name="persuasion"
         modifier={props.modifier}
         proficiency={props.proficiency}
       ></Skill>

@@ -6,7 +6,17 @@ export default function DexteritySkills(props) {
   return (
     <div className="dexterity_skills skills">
       <Skill
-        name="athletics"
+        name="acrobatics"
+        modifier={props.modifier}
+        proficiency={props.proficiency}
+      ></Skill>
+      <Skill
+        name="sleight of hand"
+        modifier={props.modifier}
+        proficiency={props.proficiency}
+      ></Skill>
+      <Skill
+        name="stealth"
         modifier={props.modifier}
         proficiency={props.proficiency}
       ></Skill>
