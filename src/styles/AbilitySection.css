@@ -1,5 +1,23 @@
+@font-face {
+  font-family: Interstate-bold;
+  src: url(../fonts/Interstate-bold.ttf);
+}
+
 .ability_section {
+  width: min-content;
+  margin: auto;
+}
+
+.ability_section_title {
+  font-family: Interstate-bold;
+  font-size: medium;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  align-items: center;
+}
+
+.abilities {
   display: flex;
-  column-gap: 3px;
-  /* flex-direction: row; */
+  column-gap: 5px;
+  justify-content: center;
 }
