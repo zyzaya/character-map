@@ -8,13 +8,13 @@ export default function AbilityScore(props) {
   }
 
   return (
-    <div className="ability_score">
+    <div className={`${props.name}_score`}>
       <AdditionalInfo></AdditionalInfo>
       <CycleArrow></CycleArrow>
-      <label htmlFor={`${props.name}_mod`}>{props.name}</label>
+      <label htmlFor={`${props.name}_score_input`}>{props.name}</label>
       <input
         type="number"
-        id={`${props.name}_mod`}
+        id={`${props.name}_score_input`}
         min="1"
         max="30"
         value={props.value}

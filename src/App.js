@@ -5,7 +5,7 @@ import Ability from './components/Ability';
 function App() {
   return (
     <div className="App">
-      <Ability name="strength"></Ability>
+      <Ability name="strength" proficiency={2}></Ability>
     </div>
   );
 }
