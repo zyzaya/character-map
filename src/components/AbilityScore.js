@@ -17,7 +17,7 @@ export default function AbilityScore(props) {
         id={`${props.name}_score_input`}
         min="1"
         max="30"
-        value={props.value}
+        value={props.score}
         onChange={editValue}
       />
     </div>
