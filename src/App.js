@@ -1,10 +1,11 @@
 import './App.css';
 import Statistic from './components/Statistic';
+import AbilityModifier from './components/AbilityModifier';
 
 function App() {
   return (
     <div className="App">
-      <Statistic name="Strength" value="1"></Statistic>
+      <AbilityModifier name="strength_mod" score="16"></AbilityModifier>
     </div>
   );
 }
