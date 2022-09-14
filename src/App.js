@@ -1,5 +1,4 @@
 import './App.css';
-import Statistic from './components/Statistic';
 import Ability from './components/Ability';
 
 function App() {
