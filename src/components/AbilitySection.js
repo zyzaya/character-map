@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Ability from './Ability';
 import CycleArrow from './CycleArrow';
 import AdditionalInfo from './AdditionalInfo';
 import '../styles/AbilitySection.css';
+import Skill from './Skill';
 
 export default function AbilitySection(props) {
+  const [strength, setStrength] = useState(10);
+  const [dexterity, setDexterity] = useState(10);
+  const [constitution, setConstitution] = useState(10);
+  const [intelligence, setIntelligence] = useState(10);
+  const [wisdom, setWisdom] = useState(10);
+  const [charisma, setCharisma] = useState(10);
+
   return (
     <div className="ability_section">
       <div className="ability_section_title">
@@ -16,12 +24,42 @@ export default function AbilitySection(props) {
       </div>
 
       <div className="abilities">
-        <Ability name="strength" proficiency={props.proficiency}></Ability>
-        <Ability name="dexterity" proficiency={props.proficiency}></Ability>
-        <Ability name="constitution" proficiency={props.proficiency}></Ability>
-        <Ability name="intelligence" proficiency={props.proficiency}></Ability>
-        <Ability name="wisdom" proficiency={props.proficiency}></Ability>
-        <Ability name="charisma" proficiency={props.proficiency}></Ability>
+        <Ability
+          name="strength"
+          proficiency={props.proficiency}
+          score={strength}
+          onChange={setStrength}
+        ></Ability>
+        <Ability
+          name="dexterity"
+          proficiency={props.proficiency}
+          score={dexterity}
+          onChange={setDexterity}
+        ></Ability>
+        <Ability
+          name="constitution"
+          proficiency={props.proficiency}
+          score={constitution}
+          onChange={setConstitution}
+        ></Ability>
+        <Ability
+          name="intelligence"
+          proficiency={props.proficiency}
+          score={intelligence}
+          onChange={setIntelligence}
+        ></Ability>
+        <Ability
+          name="wisdom"
+          proficiency={props.proficiency}
+          score={wisdom}
+          onChange={setWisdom}
+        ></Ability>
+        <Ability
+          name="charisma"
+          proficiency={props.proficiency}
+          score={charisma}
+          onChange={setCharisma}
+        ></Ability>
       </div>
 
       <div className="skill_section_title">
@@ -32,7 +70,13 @@ export default function AbilitySection(props) {
         Skills
       </div>
 
-      <div className="skills"></div>
+      <div className="skills">
+        <Skill
+          name="athletics"
+          modifier={2}
+          proficiency={props.proficiency}
+        ></Skill>
+      </div>
     </div>
   );
 }
