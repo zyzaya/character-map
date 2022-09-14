@@ -19,15 +19,16 @@ export default function SavingThrow(props) {
     <div className={`${props.name}_save`}>
       <AdditionalInfo></AdditionalInfo>
       <CycleArrow></CycleArrow>
-      <label
-        htmlFor={`${props.name}_save_input`}
-      >{`${props.name} saving throw${displayValue}`}</label>
-      <input
-        type="checkbox"
-        id={`${props.name}_save_input`}
-        value={proficient}
-        onChange={editProficient}
-      />
+      <label htmlFor={`${props.name}_save_input`}>
+        <div>Saving Throw</div>
+        <input
+          type="checkbox"
+          id={`${props.name}_save_input`}
+          value={proficient}
+          onChange={editProficient}
+        />
+        <div className="save_value">{displayValue}</div>
+      </label>
     </div>
   );
 }

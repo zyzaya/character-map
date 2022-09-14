@@ -9,7 +9,8 @@ export default function AbilityModifier(props) {
     <div className="ability_modifier">
       <AdditionalInfo></AdditionalInfo>
       <CycleArrow></CycleArrow>
-      <div className={`${props.name}_mod`}>{displayValue}</div>
+      <div className="modifier_title">Ability Modifier</div>
+      <div className="modifier_value">{displayValue}</div>
     </div>
   );
 }
