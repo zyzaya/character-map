@@ -1,10 +1,10 @@
 import './App.css';
-import Ability from './components/Ability';
+import AbilitySection from './components/AbilitySection';
 
 function App() {
   return (
     <div className="App">
-      <Ability name="strength" proficiency={2}></Ability>
+      <AbilitySection></AbilitySection>
     </div>
   );
 }
