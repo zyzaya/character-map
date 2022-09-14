@@ -9,8 +9,6 @@ export default function AbilityModifier(props) {
     <div className="ability_modifier">
       <AdditionalInfo></AdditionalInfo>
       <CycleArrow></CycleArrow>
-      {/* <label htmlFor={`${props.name}_mod`}>{props.name}</label>
-      <input type="number" id={`${props.name_mod}`} /> */}
       <div className={`${props.name}_mod`}>{displayValue}</div>
     </div>
   );
