@@ -1,7 +1,7 @@
 import React from 'react';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
-import '../styles/Speed.css';
+import '../styles/HitDice.css';
 
 export default function HitDice(props) {
   return (
