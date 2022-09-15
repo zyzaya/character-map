@@ -1,5 +1,6 @@
 import React from 'react';
 import Weapons from './Weapons';
+import '../../styles/Offense.css';
 
 export default function Offense(props) {
   return (

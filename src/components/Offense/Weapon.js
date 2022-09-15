@@ -5,10 +5,18 @@ export default function Weapon(props) {
     <div className="weapon">
       <div className="weapon_title">{props.name}</div>
       <div className="tohit">
-        {`+${props.modifier + props.proficiency} to hit`}
+        {'+ '}
+        <span className="attack_modifier">
+          {props.modifier + props.proficiency}
+        </span>
+        {' to hit.'}
       </div>
       <div className="damage">
-        {`${props.dice_count}d${props.dice_size} + ${props.modifier}`}
+        <span className="dice_count">{props.dice_count}</span>
+        {' d '}
+        <span className="dice_size">{props.dice_size}</span>{' '}
+        <span className="damage_type">{props.damage_type}</span>
+        {' damage on hit.'}
       </div>
     </div>
   );
