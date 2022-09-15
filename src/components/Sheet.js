@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AbilitySection from './AbilitySection';
 import ArmorClass from './ArmorClass';
+import Initiative from './Initiative';
 import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
 
@@ -60,6 +61,7 @@ export default function Sheet(props) {
           dexterity_modifier={modifier(dexterity)}
           strength={strength}
         ></ArmorClass>
+        <Initiative dexterity_modifier={modifier(dexterity)}></Initiative>
       </div>
     </div>
   );
