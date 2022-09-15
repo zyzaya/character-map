@@ -2,6 +2,7 @@ import React from 'react';
 import ArmorClass from './ArmorClass';
 import Initiative from './Initiative';
 import Speed from './Speed';
+import '../styles/ArmorInitiativeSpeed.css';
 
 export default function ArmorInitiativeSpeed(props) {
   return (

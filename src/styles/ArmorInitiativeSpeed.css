@@ -1,0 +1,7 @@
+.armor_initiative_speed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: min-content;
+  column-gap: 8px;
+  margin: auto;
+}
