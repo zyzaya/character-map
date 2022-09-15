@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import AbilitySection from './AbilitySection';
 import ArmorClass from './ArmorClass';
+import ArmorInitiativeSpeed from './ArmorInitiativeSpeed';
 import Health from './Health/Health';
 import Initiative from './Initiative';
 import Proficiency from './Proficiency';
@@ -58,14 +59,11 @@ export default function Sheet(props) {
         wisdom_modifier={modifier(wisdom)}
         charisma_modifier={modifier(charisma)}
       ></SkillSection>
-      <div>
-        <ArmorClass
-          dexterity_modifier={modifier(dexterity)}
-          strength={strength}
-        ></ArmorClass>
-        <Initiative dexterity_modifier={modifier(dexterity)}></Initiative>
-        <Speed value="30"></Speed>
-      </div>
+      <ArmorInitiativeSpeed
+        strength_modifier={modifier(strength)}
+        dexterity_modifier={modifier(dexterity)}
+        speed={30}
+      ></ArmorInitiativeSpeed>
       <Health
         level={6}
         die_size={12}
