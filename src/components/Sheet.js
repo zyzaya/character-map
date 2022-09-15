@@ -4,6 +4,7 @@ import ArmorClass from './ArmorClass';
 import Initiative from './Initiative';
 import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
+import Speed from './Speed';
 
 export default function Sheet(props) {
   const [proficiency, setProficiency] = useState(2);
@@ -62,6 +63,7 @@ export default function Sheet(props) {
           strength={strength}
         ></ArmorClass>
         <Initiative dexterity_modifier={modifier(dexterity)}></Initiative>
+        <Speed value="30"></Speed>
       </div>
     </div>
   );
