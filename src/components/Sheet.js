@@ -56,7 +56,10 @@ export default function Sheet(props) {
         charisma_modifier={modifier(charisma)}
       ></SkillSection>
       <div>
-        <ArmorClass dexterity_modifier={modifier(dexterity)}></ArmorClass>
+        <ArmorClass
+          dexterity_modifier={modifier(dexterity)}
+          strength={strength}
+        ></ArmorClass>
       </div>
     </div>
   );

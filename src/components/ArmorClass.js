@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Armors } from './Armors';
 import '../styles/ArmorClass.css';
+import AdditionalInfo from './AdditionalInfo';
+import CycleArrow from './CycleArrow';
 
 export default function ArmorClass(props) {
   const [ac, setAC] = useState(10);
@@ -38,38 +40,59 @@ export default function ArmorClass(props) {
 
   return (
     <div className="armor_class">
-      <div className="armor_title">Armor Class</div>
-      <select name="armor" onChange={onArmorChange}>
-        <option value="none">{Armors.none.name}</option>
-        <optgroup label="Light Armor">
-          {Object.keys(Armors.light).map((k) => {
-            return (
-              <option value={k} key={k}>
-                {Armors.light[k].name}
-              </option>
-            );
-          })}
-        </optgroup>
-        <optgroup label="Medium Armor">
-          {Object.keys(Armors.medium).map((k) => {
-            return (
-              <option value={k} key={k}>
-                {Armors.medium[k].name}
-              </option>
-            );
-          })}
-        </optgroup>
-        <optgroup label="Heavy Armor">
-          {Object.keys(Armors.heavy).map((k) => {
-            return (
-              <option value={k} key={k}>
-                {Armors.heavy[k].name}
-              </option>
-            );
-          })}
-        </optgroup>
-      </select>
+      <div className="armor_title">
+        <div className="buttons">
+          <AdditionalInfo></AdditionalInfo>
+          <CycleArrow></CycleArrow>
+        </div>
+        Armor Class
+      </div>
+      <div className="equipped_armor">
+        <div className="buttons">
+          <AdditionalInfo></AdditionalInfo>
+          <CycleArrow></CycleArrow>
+        </div>
+        <select name="armor" onChange={onArmorChange}>
+          <option value="none">{Armors.none.name}</option>
+          <optgroup label="Light Armor">
+            {Object.keys(Armors.light).map((k) => {
+              return (
+                <option value={k} key={k}>
+                  {Armors.light[k].name}
+                </option>
+              );
+            })}
+          </optgroup>
+          <optgroup label="Medium Armor">
+            {Object.keys(Armors.medium).map((k) => {
+              return (
+                <option value={k} key={k}>
+                  {Armors.medium[k].name}
+                </option>
+              );
+            })}
+          </optgroup>
+          <optgroup label="Heavy Armor">
+            {Object.keys(Armors.heavy).map((k) => {
+              let min_str = Armors.heavy[k].strength_min;
+              return (
+                <option
+                  value={k}
+                  key={k}
+                  disabled={min_str !== undefined && props.strength < min_str}
+                >
+                  {Armors.heavy[k].name}
+                </option>
+              );
+            })}
+          </optgroup>
+        </select>
+      </div>
       <div className="shield">
+        <div className="buttons">
+          <AdditionalInfo></AdditionalInfo>
+          <CycleArrow></CycleArrow>
+        </div>
         <label htmlFor="shield_input">Shield (+2 AC)</label>
         <input
           type="checkbox"
