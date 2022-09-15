@@ -1,6 +1,7 @@
 .skill {
   display: grid;
   grid-template-columns: min-content 1fr;
+  column-gap: 3px;
   padding: 10px 0;
 }
 

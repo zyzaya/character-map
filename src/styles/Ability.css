@@ -19,7 +19,7 @@
 .score {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
-  grid-gap: 3px;
+  column-gap: 3px;
   font-family: Interstate-light;
   font-size: medium;
   padding: 10px 0;
@@ -27,7 +27,8 @@
 }
 
 .score > label {
-  white-space: nowrap;
+  /* white-space: nowrap; */
+  overflow: hidden;
 }
 
 .score > input {
@@ -39,7 +40,7 @@
 .modifier {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
-  grid-gap: 3px;
+  column-gap: 3px;
   padding: 10px 0;
   align-items: center;
 }
@@ -51,7 +52,7 @@
 .save {
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-gap: 3px;
+  column-gap: 3px;
   padding: 10px 0;
   align-items: center;
 }
