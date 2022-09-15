@@ -71,6 +71,7 @@ export default function Sheet(props) {
         proficiency={proficiency}
         strength_modifier={modifier(strength)}
         dexterity_modifier={modifier(dexterity)}
+        spell_modifier={modifier(wisdom)}
       ></Offense>
     </div>
   );
