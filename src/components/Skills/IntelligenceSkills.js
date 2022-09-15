@@ -4,7 +4,7 @@ import '../../styles/Skill.css';
 
 export default function IntelligenceSkills(props) {
   return (
-    <div className="intelligence_skills skills">
+    <div className="intelligence_skills skill_list">
       <Skill
         name="arcana"
         modifier={props.modifier}

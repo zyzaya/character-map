@@ -4,7 +4,7 @@ import '../../styles/Skill.css';
 
 export default function WisdomSkills(props) {
   return (
-    <div className="wisdom_skills skills">
+    <div className="wisdom_skills skill_list">
       <Skill
         name="animal handling"
         modifier={props.modifier}

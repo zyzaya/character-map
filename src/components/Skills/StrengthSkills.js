@@ -4,7 +4,7 @@ import '../../styles/Skill.css';
 
 export default function StrengthSkills(props) {
   return (
-    <div className="strength_skills skills">
+    <div className="strength_skills skill_list">
       <Skill
         name="athletics"
         modifier={props.modifier}

@@ -3,11 +3,6 @@
   src: url(../fonts/Interstate-bold.ttf);
 }
 
-.ability_section {
-  width: min-content;
-  margin: auto;
-}
-
 .ability_section_title {
   font-family: Interstate-bold;
   font-size: medium;
@@ -22,31 +17,5 @@
   column-gap: 5px;
   justify-content: center;
   border-top: 1px solid black;
-}
-
-.skill_section_title {
-  font-family: Interstate-bold;
-  font-size: medium;
-  margin-top: 8px;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  align-items: center;
-}
-
-.skills_section {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 5px;
-  justify-content: space-between;
-  border-top: 1px solid black;
-}
-
-
-.skills > :nth-child(odd) {
-  background-color: rgb(233, 232, 231);
-}
-
-.skills {
-  display: grid;
-  grid-template-rows: repeat(6, min-content);
+  width: 100%;
 }

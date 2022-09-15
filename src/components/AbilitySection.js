@@ -2,14 +2,7 @@ import React, { useState } from 'react';
 import Ability from './Ability';
 import CycleArrow from './CycleArrow';
 import AdditionalInfo from './AdditionalInfo';
-import StrengthSkills from './Skills/StrengthSkills';
-import DexteritySkills from './Skills/DexteritySkills';
-import ConstitutionSkills from './Skills/ConstitutionSkills';
-import IntelligenceSkills from './Skills/IntelligenceSkills';
-import WisdomSkills from './Skills/WisdomSkills';
-import CharismaSkills from './Skills/CharismaSkills';
 import '../styles/AbilitySection.css';
-// import '../styles/SkillSection.css';
 
 export default function AbilitySection(props) {
   const [strength, setStrength] = useState(10);
@@ -18,10 +11,6 @@ export default function AbilitySection(props) {
   const [intelligence, setIntelligence] = useState(10);
   const [wisdom, setWisdom] = useState(10);
   const [charisma, setCharisma] = useState(10);
-
-  function modifier(score) {
-    return Math.floor((score - 10) / 2);
-  }
 
   return (
     <div className="ability_section">
@@ -70,41 +59,6 @@ export default function AbilitySection(props) {
           score={charisma}
           onChange={setCharisma}
         ></Ability>
-      </div>
-
-      <div className="skill_section_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
-        Skills
-      </div>
-
-      <div className="skills_section">
-        <StrengthSkills
-          proficiency={props.proficiency}
-          modifier={modifier(strength)}
-        ></StrengthSkills>
-        <DexteritySkills
-          proficiency={props.proficiency}
-          modifier={modifier(dexterity)}
-        ></DexteritySkills>
-        <ConstitutionSkills
-          proficiency={props.proficiency}
-          modifier={modifier(constitution)}
-        ></ConstitutionSkills>
-        <IntelligenceSkills
-          proficiency={props.proficiency}
-          modifier={modifier(intelligence)}
-        ></IntelligenceSkills>
-        <WisdomSkills
-          proficiency={props.proficiency}
-          modifier={modifier(wisdom)}
-        ></WisdomSkills>
-        <CharismaSkills
-          proficiency={props.proficiency}
-          modifier={modifier(charisma)}
-        ></CharismaSkills>
       </div>
     </div>
   );
