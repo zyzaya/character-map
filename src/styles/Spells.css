@@ -15,16 +15,20 @@
   white-space: nowrap;
 }
 
-.spell_save {
+.spell_save, .spell_attack {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3px;
   padding: 3px 0;
 }
 
-.spell_save_title {
+.spell_save_title, .spell_attack_title {
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 3px;
   white-space: nowrap;
+}
+
+.spell_attack_modifier {
+  border-bottom: 1px solid black;
 }
