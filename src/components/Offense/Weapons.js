@@ -2,6 +2,7 @@ import React from 'react';
 import AdditionalInfo from '../AdditionalInfo';
 import CycleArrow from '../CycleArrow';
 import Weapon from './Weapon';
+import '../../styles/Weapons.css';
 
 export default function Weapons(props) {
   return (

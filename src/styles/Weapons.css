@@ -3,15 +3,10 @@
   src: url(../fonts/Interstate-bold.ttf);
 }
 
-.offense {
-  
-}
-
 .weapons {
   display: grid;
   grid-template-rows: repeat(3, min-content);
 }
-
 
 .weapons > :nth-child(even) {
   background-color: rgb(233, 232, 231);
