@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import AbilitySection from './AbilitySection';
 import ArmorClass from './ArmorClass';
-import HitDice from './Health/HitDice';
-import HitPoints from './Health/HitPoints';
+import Health from './Health/Health';
 import Initiative from './Initiative';
 import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
@@ -67,14 +66,11 @@ export default function Sheet(props) {
         <Initiative dexterity_modifier={modifier(dexterity)}></Initiative>
         <Speed value="30"></Speed>
       </div>
-      <div>
-        <HitDice level={6} size={8}></HitDice>
-        <HitPoints
-          level={6}
-          size={8}
-          constitution_modifier={modifier(constitution)}
-        ></HitPoints>
-      </div>
+      <Health
+        level={6}
+        die_size={12}
+        constitution_modifier={modifier(constitution)}
+      ></Health>
     </div>
   );
 }
