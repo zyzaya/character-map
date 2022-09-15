@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import AbilitySection from './AbilitySection';
 import ArmorClass from './ArmorClass';
-import HitDice from './HitDice';
-import HitPoints from './HitPoints';
+import HitDice from './Health/HitDice';
+import HitPoints from './Health/HitPoints';
 import Initiative from './Initiative';
 import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
