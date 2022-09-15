@@ -1,7 +1,7 @@
 import React from 'react';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
-// import '../styles/HitDice.css';
+import '../styles/HitPoints.css';
 
 export default function HitDice(props) {
   let value = props.size + props.constitution_modifier;
