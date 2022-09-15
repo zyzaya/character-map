@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Armors } from './Armors';
+import '../styles/ArmorClass.css';
 
 export default function ArmorClass(props) {
   const [ac, setAC] = useState(10);
@@ -37,7 +38,7 @@ export default function ArmorClass(props) {
 
   return (
     <div className="armor_class">
-      <div className="armor_title">AC</div>
+      <div className="armor_title">Armor Class</div>
       <select name="armor" onChange={onArmorChange}>
         <option value="none">{Armors.none.name}</option>
         <optgroup label="Light Armor">
@@ -68,13 +69,16 @@ export default function ArmorClass(props) {
           })}
         </optgroup>
       </select>
-      <label htmlFor="shield">Shield</label>
-      <input
-        type="checkbox"
-        name="shield"
-        id="shield"
-        onChange={onShieldChange}
-      />
+      <div className="shield">
+        <label htmlFor="shield_input">Shield (+2 AC)</label>
+        <input
+          type="checkbox"
+          name="shield"
+          id="shieldinput"
+          className="shield_input"
+          onChange={onShieldChange}
+        />
+      </div>
       <div className="armor_output">{ac}</div>
     </div>
   );
