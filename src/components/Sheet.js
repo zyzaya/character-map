@@ -4,6 +4,7 @@ import ArmorClass from './ArmorClass';
 import ArmorInitiativeSpeed from './ArmorInitiativeSpeed';
 import Health from './Health/Health';
 import Initiative from './Initiative';
+import Offense from './Offense/Offense';
 import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
 import Speed from './Speed';
@@ -69,6 +70,11 @@ export default function Sheet(props) {
         die_size={12}
         constitution_modifier={modifier(constitution)}
       ></Health>
+      <Offense
+        proficiency={proficiency}
+        strength_modifier={modifier(strength)}
+        dexterity_modifier={modifier(dexterity)}
+      ></Offense>
     </div>
   );
 }
