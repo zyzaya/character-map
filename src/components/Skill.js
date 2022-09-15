@@ -7,7 +7,6 @@ export default function Skill(props) {
 
   function editProficient(e) {
     setProficient(e.target.checked);
-    props.onProficiencyChanged(e.target.checked);
   }
 
   let value = parseInt(props.modifier);
