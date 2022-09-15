@@ -1,0 +1,7 @@
+.health {
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 8px;
+  width: min-content;
+  margin: auto;
+}

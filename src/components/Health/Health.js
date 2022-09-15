@@ -1,6 +1,7 @@
 import React from 'react';
 import HitDice from './HitDice';
 import HitPoints from './HitPoints';
+import '../../styles/Health.css';
 
 export default function Health(props) {
   return (
