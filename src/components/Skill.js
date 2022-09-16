@@ -24,18 +24,22 @@ export default function Skill(props) {
   displayName = displayName.replaceAll('_', ' ');
 
   return (
-    <div className={`skill ${visual}`} onClick={toggleVisual}>
+    <div className={`skill ${visual}`}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
       </div>
       <label htmlFor={`${props.name}_skill_input`}>
-        <div className="skill_title">{displayName}</div>
+        <div className="skill_title" onClick={toggleVisual}>
+          {displayName}
+        </div>
         <input
           type="checkbox"
           id={`${props.name}_skill_input`}
           value={proficient}
-          onChange={editProficient}
+          onChange={(e) => {
+            editProficient(e);
+          }}
         />
         <div className="skill_value">{displayValue}</div>
       </label>
