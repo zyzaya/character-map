@@ -21,6 +21,6 @@
   border-bottom: 1px solid black;
 }
 
-.skill_list > :nth-child(odd) {
+.skill_list > .none:nth-child(odd) {
   background-color: rgb(233, 232, 231);
 }

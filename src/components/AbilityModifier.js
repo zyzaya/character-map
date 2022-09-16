@@ -15,11 +15,10 @@ export default function AbilityModifier(props) {
   let value = Math.floor((props.score - 10) / 2);
   let displayValue = `${value >= 0 ? `+${value}` : value}`;
   return (
-    <div className="modifier" onClick={toggleVisual}>
+    <div className={`modifier ${visual}`} onClick={toggleVisual}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
-        {visual}
       </div>
       <div className="modifier_title">Ability Modifier</div>
       <div className="modifier_value">{displayValue}</div>

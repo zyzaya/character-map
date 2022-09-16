@@ -20,11 +20,10 @@ export default function AbilityScore(props) {
   displayName += ` (${short})`;
 
   return (
-    <div className="score" onClick={toggleVisual}>
+    <div className={`score ${visual}`} onClick={toggleVisual}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
-        {visual}
       </div>
       <label htmlFor={`${props.name}_score_input`}>{displayName}</label>
       <input

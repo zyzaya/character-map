@@ -23,11 +23,10 @@ export default function Skill(props) {
   let displayName = props.name[0].toUpperCase() + props.name.substring(1);
 
   return (
-    <div className="skill" onClick={toggleVisual}>
+    <div className={`skill ${visual}`} onClick={toggleVisual}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
-        {visual}
       </div>
       <label htmlFor={`${props.name}_skill_input`}>
         <div className="skill_title">{displayName}</div>
