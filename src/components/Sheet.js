@@ -6,6 +6,7 @@ import Offense from './Offense/Offense';
 import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
 import '../styles/Sheet.css';
+import Character from './Character/Character';
 
 export default function Sheet(props) {
   const [proficiency, setProficiency] = useState(2);
@@ -35,6 +36,7 @@ export default function Sheet(props) {
 
   return (
     <div className="sheet">
+      <Character></Character>
       <div className="sheet_left">
         <Proficiency
           value={proficiency}

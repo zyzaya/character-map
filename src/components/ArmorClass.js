@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
-import { Armors } from './Armors';
+import { Armors } from '../info/Armors';
 import '../styles/ArmorClass.css';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
