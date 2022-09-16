@@ -60,7 +60,7 @@ export default function Sheet(props) {
           charisma_modifier={modifier(charisma)}
         ></SkillSection>
       </div>
-      <div>
+      <div className="sheet_right">
         <div className="misc_stats">
           <ArmorInitiativeSpeed
             strength_modifier={modifier(strength)}
