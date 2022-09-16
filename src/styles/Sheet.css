@@ -7,4 +7,9 @@
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.sheet_right {
+  
 }

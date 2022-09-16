@@ -23,7 +23,7 @@ font-face {
   column-gap: 3px;
   font-family: Interstate-light;
   font-size: medium;
-  padding: 10px 0;
+  padding: 8px 0;
   align-items: center;
 }
 
@@ -41,7 +41,7 @@ font-face {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   column-gap: 3px;
-  padding: 10px 0;
+  padding: 8px 0;
   align-items: center;
 }
 
@@ -53,7 +53,7 @@ font-face {
   display: grid;
   grid-template-columns: min-content 1fr;
   column-gap: 3px;
-  padding: 10px 0;
+  padding: 8px 0;
   align-items: center;
 }
 
