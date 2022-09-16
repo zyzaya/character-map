@@ -1,9 +1,11 @@
 .sheet {
   display: grid;
+  grid-template-rows: 1fr min-content;
   grid-template-columns: 1fr 1fr;
 }
 
 .sheet_left {
+  grid-area: 2 / 1 / -1 / 2;
   display: grid;
   grid-template-rows: min-content min-content;
   grid-template-columns: 1fr 1fr;
@@ -11,6 +13,7 @@
 }
 
 .sheet_right {
+  grid-area: 2 / 2 / -1 / -1;
   display: grid;
   grid-template-rows: min-content min-content;
   align-content: center;
