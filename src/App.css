@@ -11,3 +11,15 @@
   font-family: Interstate-light;
   font-size: small;
 }
+
+.focused {
+  background-color: green;
+}
+
+.sourced {
+  background-color: red;
+}
+
+.affected {
+  background-color: blue;
+}

@@ -15,13 +15,14 @@ export const statisticsSlice = createSlice({
     },
     athletics: {
       visual: 'none',
-      source: ['str_mod', 'proficiency'],
+      sources: ['str_mod', 'proficiency'],
       affecting: [],
     },
   },
   reducers: {
     setVisual: (state, action) => {
-      state[action.payload.name] = action.payload.visual;
+      if (state[action.payload.name] !== undefined)
+        state[action.payload.name].visual = action.payload.visual;
     },
   },
 });

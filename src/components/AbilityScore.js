@@ -1,8 +1,11 @@
 import React from 'react';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
+import useStatistic from '../hooks/useStatistic';
 
 export default function AbilityScore(props) {
+  const [statistic, setStatistic] = useStatistic('str_score');
+
   function editValue(e) {
     props.onChange(parseInt(e.target.value));
   }
@@ -16,6 +19,7 @@ export default function AbilityScore(props) {
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
+        {statistic}
       </div>
       <label htmlFor={`${props.name}_score_input`}>{displayName}</label>
       <input

@@ -1,10 +1,11 @@
 import { useSelector, useDispatch } from 'react-redux';
+import { setVisual } from '../state/statisticsSlice';
 
-export default function useStatistic(name, newVisual) {
+export default function useStatistic(name) {
   const dispatch = useDispatch();
-  const current = useSelector((state) => state[name]);
+  const current = useSelector((state) => state.statistics)[name];
 
-  let setVisual = (newVisual) => {
+  let set = (newVisual) => {
     if (newVisual === 'focused') {
       current.sources.forEach((s) => {
         dispatch(setVisual({ name: s, visual: 'sourced' }));
@@ -12,7 +13,7 @@ export default function useStatistic(name, newVisual) {
       current.affecting.forEach((a) => {
         dispatch(setVisual({ name: a, visual: 'affected' }));
       });
-    } else if (newVisual === 'none' && current === 'focused') {
+    } else if (newVisual === 'none' && current.visual === 'focused') {
       current.sources.forEach((s) => {
         dispatch(setVisual({ name: s, visual: 'none' }));
       });
@@ -20,7 +21,9 @@ export default function useStatistic(name, newVisual) {
         dispatch(setVisual({ name: a, visual: 'none' }));
       });
     }
+    console.log(`${name}:${current.visual}:${newVisual}`);
+    dispatch(setVisual({ name: name, visual: newVisual }));
   };
 
-  return [current, setVisual];
+  return [current.visual, set];
 }

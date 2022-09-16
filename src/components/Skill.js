@@ -1,9 +1,16 @@
 import React, { useState } from 'react';
+import useStatistic from '../hooks/useStatistic';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
 
 export default function Skill(props) {
   const [proficient, setProficient] = useState(false);
+  const [statistic, setStatistic] = useStatistic('athletics');
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setStatistic(statistic === 'focused' ? 'none' : 'focused');
+  }
 
   function editProficient(e) {
     setProficient(e.target.checked);
@@ -16,10 +23,11 @@ export default function Skill(props) {
   let displayName = props.name[0].toUpperCase() + props.name.substring(1);
 
   return (
-    <div className="skill">
+    <div className="skill" onClick={toggleVisual}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
+        {statistic}
       </div>
       <label htmlFor={`${props.name}_skill_input`}>
         <div className="skill_title">{displayName}</div>
