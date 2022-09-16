@@ -1,6 +1,7 @@
 import React from 'react';
 import Weapons from './Weapons';
 import Spells from './Spells';
+import '../../styles/Offense.css';
 
 export default function Offense(props) {
   return (

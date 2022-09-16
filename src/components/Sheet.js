@@ -61,16 +61,18 @@ export default function Sheet(props) {
         ></SkillSection>
       </div>
       <div>
-        <ArmorInitiativeSpeed
-          strength_modifier={modifier(strength)}
-          dexterity_modifier={modifier(dexterity)}
-          speed={30}
-        ></ArmorInitiativeSpeed>
-        <Health
-          level={6}
-          die_size={12}
-          constitution_modifier={modifier(constitution)}
-        ></Health>
+        <div className="misc_stats">
+          <ArmorInitiativeSpeed
+            strength_modifier={modifier(strength)}
+            dexterity_modifier={modifier(dexterity)}
+            speed={30}
+          ></ArmorInitiativeSpeed>
+          <Health
+            level={6}
+            die_size={12}
+            constitution_modifier={modifier(constitution)}
+          ></Health>
+        </div>
         <Offense
           proficiency={proficiency}
           strength_modifier={modifier(strength)}

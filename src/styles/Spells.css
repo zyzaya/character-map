@@ -13,6 +13,7 @@
   font-family: Interstate-bold;
   font-size: medium;
   white-space: nowrap;
+  border-bottom: 1px solid black;
 }
 
 .spell_save, .spell_attack {

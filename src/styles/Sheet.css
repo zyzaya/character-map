@@ -11,5 +11,16 @@
 }
 
 .sheet_right {
-  
+
+}
+
+.misc_stats {
+  display: grid;
+  grid-template-rows: repeat(2, min-content);
+  row-gap: 5px;
+  border: 3px double black;
+  border-radius: 2px 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: lightgray;
 }

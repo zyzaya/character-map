@@ -21,6 +21,7 @@
   font-family: Interstate-bold;
   font-size: medium;
   white-space: nowrap;
+  border-bottom: 1px solid black;
 }
 
 .weapon {
