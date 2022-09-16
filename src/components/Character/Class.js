@@ -14,9 +14,20 @@ export default function Class(props) {
       <label htmlFor="class" className="class_title">
         Class
       </label>
-      <select name="class" id="class">
+      <select
+        name="class"
+        id="class"
+        value={props.value}
+        onChange={(e) => {
+          props.onChange(e.target.value);
+        }}
+      >
         {Object.keys(Classes).map((k) => {
-          return <option value={k}>{Classes[k].name}</option>;
+          return (
+            <option key={k} value={k}>
+              {Classes[k].name}
+            </option>
+          );
         })}
       </select>
     </div>

@@ -5,8 +5,8 @@ import Level from './Level';
 export default function Character(props) {
   return (
     <div className="character">
-      <Class onChange={props.onClassChange}></Class>
-      <Level onChange={props.onLevelChange}></Level>
+      <Class onChange={props.onClassChange} value={props.class}></Class>
+      <Level onChange={props.onLevelChange} value={props.level}></Level>
     </div>
   );
 }

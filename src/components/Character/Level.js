@@ -19,8 +19,10 @@ export default function Level(props) {
         id="level"
         min="1"
         max="20"
-        level={props.value}
-        onChange={props.onChange}
+        value={props.value}
+        onChange={(e) => {
+          props.onChange(e.target.value);
+        }}
       />
     </div>
   );

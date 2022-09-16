@@ -9,7 +9,11 @@ import '../styles/Sheet.css';
 import Character from './Character/Character';
 
 export default function Sheet(props) {
+  const [char_class, setClass] = useState('artificer');
+  const [level, setLevel] = useState(1);
+
   const [proficiency, setProficiency] = useState(2);
+
   const [strength, setStrength] = useState(10);
   const [dexterity, setDexterity] = useState(10);
   const [constitution, setConstitution] = useState(10);
@@ -36,7 +40,12 @@ export default function Sheet(props) {
 
   return (
     <div className="sheet">
-      <Character></Character>
+      <Character
+        class={char_class}
+        onClassChange={setClass}
+        level={level}
+        onLevelChange={setLevel}
+      ></Character>
       <div className="sheet_left">
         <Proficiency
           value={proficiency}
