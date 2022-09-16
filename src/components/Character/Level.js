@@ -1,6 +1,7 @@
 import React from 'react';
 import AdditionalInfo from '../AdditionalInfo';
 import CycleArrow from '../CycleArrow';
+import '../../styles/Level.css';
 
 export default function Level(props) {
   return (
@@ -10,7 +11,7 @@ export default function Level(props) {
         <CycleArrow></CycleArrow>
       </div>
       <label htmlFor="level" className="level_title">
-        Class
+        Level
       </label>
       <input
         type="number"
