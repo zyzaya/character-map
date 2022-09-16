@@ -7,6 +7,7 @@ import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
 import '../styles/Sheet.css';
 import Character from './Character/Character';
+import { Classes } from '../info/Classes';
 
 export default function Sheet(props) {
   const [char_class, setClass] = useState('artificer');
@@ -79,8 +80,8 @@ export default function Sheet(props) {
             speed={30}
           ></ArmorInitiativeSpeed>
           <Health
-            level={6}
-            die_size={12}
+            level={level}
+            die_size={Classes[char_class].hit_die}
             constitution_modifier={modifier(constitution)}
           ></Health>
         </div>
