@@ -3,11 +3,15 @@ import { setVisual } from '../state/statisticsSlice';
 
 export default function useStatistic(name) {
   const dispatch = useDispatch();
-  const current = useSelector((state) => state.statistics)[name];
-  console.log(`${name}:${JSON.stringify(current)}`);
+  const statistics = useSelector((state) => state.statistics);
+  let current = statistics[name];
   if (current === undefined) return ['none', () => {}];
 
   let set = (newVisual) => {
+    Object.keys(statistics).forEach((k) => {
+      dispatch(setVisual({ name: k, visual: 'none' }));
+    });
+
     if (newVisual === 'focused') {
       current.sources.forEach((s) => {
         dispatch(setVisual({ name: s, visual: 'sourced' }));
