@@ -5,6 +5,7 @@ import Health from './Health/Health';
 import Offense from './Offense/Offense';
 import Proficiency from './Proficiency';
 import SkillSection from './SkillSection';
+import '../styles/Sheet.css';
 
 export default function Sheet(props) {
   const [proficiency, setProficiency] = useState(2);
@@ -34,45 +35,49 @@ export default function Sheet(props) {
 
   return (
     <div className="sheet">
-      <Proficiency
-        value={proficiency}
-        onChange={handleProficiencyChange}
-      ></Proficiency>
-      <AbilitySection
-        proficiency={proficiency}
-        strength={strength}
-        dexterity={dexterity}
-        constitution={constitution}
-        intelligence={intelligence}
-        wisdom={wisdom}
-        charisma={charisma}
-        onScoreChange={handleScoreChange}
-      ></AbilitySection>
-      <SkillSection
-        proficiency={proficiency}
-        strength_modifier={modifier(strength)}
-        dexterity_modifier={modifier(dexterity)}
-        constitution_modifier={modifier(constitution)}
-        intelligence_modifier={modifier(intelligence)}
-        wisdom_modifier={modifier(wisdom)}
-        charisma_modifier={modifier(charisma)}
-      ></SkillSection>
-      <ArmorInitiativeSpeed
-        strength_modifier={modifier(strength)}
-        dexterity_modifier={modifier(dexterity)}
-        speed={30}
-      ></ArmorInitiativeSpeed>
-      <Health
-        level={6}
-        die_size={12}
-        constitution_modifier={modifier(constitution)}
-      ></Health>
-      <Offense
-        proficiency={proficiency}
-        strength_modifier={modifier(strength)}
-        dexterity_modifier={modifier(dexterity)}
-        spell_modifier={modifier(wisdom)}
-      ></Offense>
+      <div className="sheet_left">
+        <Proficiency
+          value={proficiency}
+          onChange={handleProficiencyChange}
+        ></Proficiency>
+        <AbilitySection
+          proficiency={proficiency}
+          strength={strength}
+          dexterity={dexterity}
+          constitution={constitution}
+          intelligence={intelligence}
+          wisdom={wisdom}
+          charisma={charisma}
+          onScoreChange={handleScoreChange}
+        ></AbilitySection>
+        <SkillSection
+          proficiency={proficiency}
+          strength_modifier={modifier(strength)}
+          dexterity_modifier={modifier(dexterity)}
+          constitution_modifier={modifier(constitution)}
+          intelligence_modifier={modifier(intelligence)}
+          wisdom_modifier={modifier(wisdom)}
+          charisma_modifier={modifier(charisma)}
+        ></SkillSection>
+      </div>
+      <div>
+        <ArmorInitiativeSpeed
+          strength_modifier={modifier(strength)}
+          dexterity_modifier={modifier(dexterity)}
+          speed={30}
+        ></ArmorInitiativeSpeed>
+        <Health
+          level={6}
+          die_size={12}
+          constitution_modifier={modifier(constitution)}
+        ></Health>
+        <Offense
+          proficiency={proficiency}
+          strength_modifier={modifier(strength)}
+          dexterity_modifier={modifier(dexterity)}
+          spell_modifier={modifier(wisdom)}
+        ></Offense>
+      </div>
     </div>
   );
 }

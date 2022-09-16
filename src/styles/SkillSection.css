@@ -1,7 +1,6 @@
 .skill_section_title {
   font-family: Interstate-bold;
   font-size: medium;
-  margin-top: 8px;
   display: grid;
   grid-template-columns: min-content 1fr;
   align-items: center;
@@ -9,15 +8,16 @@
 
 .skills {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  column-gap: 5px;
-  justify-content: space-between;
+  grid-template-rows: repeat(6, 1fr);
+  height: 800px;
+  justify-content: stretch;
   border-top: 1px solid black;
 }
 
 .skill_list {
   display: grid;
   grid-template-rows: repeat(6, min-content);
+  border-bottom: 1px solid black;
 }
 
 .skill_list > :nth-child(odd) {

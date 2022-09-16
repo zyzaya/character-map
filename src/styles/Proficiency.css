@@ -4,6 +4,7 @@
 }
 
 .proficiency {
+  grid-area: 1 / 1 / 2 / 3;
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   column-gap: 8px;

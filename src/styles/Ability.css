@@ -1,4 +1,4 @@
-@font-face {
+font-face {
   font-family: Interstate-light;
   src: url(../fonts/Interstate-light.ttf);
 }
@@ -6,6 +6,7 @@
 .ability {
   display: grid;
   grid-template-rows: repeat(3, min-content);
+  border-bottom: 1px solid black;
 }
 
 .ability > :nth-child(odd) {
@@ -27,7 +28,6 @@
 }
 
 .score > label {
-  /* white-space: nowrap; */
   overflow: hidden;
 }
 

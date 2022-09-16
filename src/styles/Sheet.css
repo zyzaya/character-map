@@ -1,0 +1,10 @@
+.sheet {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.sheet_left {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 1fr 1fr;
+}
