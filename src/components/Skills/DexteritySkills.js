@@ -11,7 +11,7 @@ export default function DexteritySkills(props) {
         proficiency={props.proficiency}
       ></Skill>
       <Skill
-        name="sleight of hand"
+        name="sleight_of_hand"
         modifier={props.modifier}
         proficiency={props.proficiency}
       ></Skill>

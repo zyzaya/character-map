@@ -21,6 +21,7 @@ export default function Skill(props) {
   let displayValue = `${value >= 0 ? `+${value}` : value}`;
 
   let displayName = props.name[0].toUpperCase() + props.name.substring(1);
+  displayName = displayName.replaceAll('_', ' ');
 
   return (
     <div className={`skill ${visual}`} onClick={toggleVisual}>

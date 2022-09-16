@@ -6,7 +6,7 @@ export default function WisdomSkills(props) {
   return (
     <div className="wisdom_skills skill_list">
       <Skill
-        name="animal handling"
+        name="animal_handling"
         modifier={props.modifier}
         proficiency={props.proficiency}
       ></Skill>
