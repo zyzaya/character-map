@@ -16,6 +16,7 @@ export default function Level(props) {
       <input
         type="number"
         name="level"
+        className="level_value"
         id="level"
         min="1"
         max="20"

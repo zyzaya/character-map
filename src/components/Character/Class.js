@@ -15,6 +15,7 @@ export default function Class(props) {
         Class
       </label>
       <select
+        className="class_value"
         name="class"
         id="class"
         value={props.value}
