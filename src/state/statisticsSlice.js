@@ -11,7 +11,12 @@ export const statisticsSlice = createSlice({
     strength_modifier: {
       visual: 'none',
       sources: ['strength_score'],
-      affecting: ['athletics'],
+      affecting: ['strength_save', 'athletics'],
+    },
+    strength_save: {
+      visual: 'none',
+      sources: ['strength_modifier', 'proficiency'],
+      affecting: [],
     },
     athletics: {
       visual: 'none',

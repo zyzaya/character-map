@@ -8,7 +8,6 @@ export default function AbilityModifier(props) {
 
   function toggleVisual(e) {
     e.preventDefault();
-    console.log(`tv:${props.name}_modifier:${visual}`);
     setVisual(visual === 'focused' ? 'none' : 'focused');
   }
 

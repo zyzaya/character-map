@@ -1,10 +1,17 @@
 import React from 'react';
 import { useState } from 'react';
+import useStatistic from '../hooks/useStatistic';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
 
 export default function SavingThrow(props) {
   const [proficient, setProficient] = useState(false);
+  const [visual, setVisual] = useStatistic(`${props.name}_save`);
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
+  }
 
   function editProficient(e) {
     setProficient(e.target.checked);
@@ -16,7 +23,7 @@ export default function SavingThrow(props) {
   let displayValue = `${value >= 0 ? `+${value}` : value}`;
 
   return (
-    <div className="save">
+    <div className={`save ${visual}`} onClick={toggleVisual}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
