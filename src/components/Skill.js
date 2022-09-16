@@ -5,11 +5,11 @@ import CycleArrow from './CycleArrow';
 
 export default function Skill(props) {
   const [proficient, setProficient] = useState(false);
-  const [statistic, setStatistic] = useStatistic('athletics');
+  const [visual, setVisual] = useStatistic(props.name);
 
   function toggleVisual(e) {
     e.preventDefault();
-    setStatistic(statistic === 'focused' ? 'none' : 'focused');
+    setVisual(visual === 'focused' ? 'none' : 'focused');
   }
 
   function editProficient(e) {
@@ -27,7 +27,7 @@ export default function Skill(props) {
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
-        {statistic}
+        {visual}
       </div>
       <label htmlFor={`${props.name}_skill_input`}>
         <div className="skill_title">{displayName}</div>

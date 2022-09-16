@@ -4,7 +4,12 @@ import CycleArrow from './CycleArrow';
 import useStatistic from '../hooks/useStatistic';
 
 export default function AbilityScore(props) {
-  const [statistic, setStatistic] = useStatistic('str_score');
+  const [visual, setVisual] = useStatistic(`${props.name}_score`);
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
+  }
 
   function editValue(e) {
     props.onChange(parseInt(e.target.value));
@@ -15,11 +20,11 @@ export default function AbilityScore(props) {
   displayName += ` (${short})`;
 
   return (
-    <div className="score">
+    <div className="score" onClick={toggleVisual}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
-        {statistic}
+        {visual}
       </div>
       <label htmlFor={`${props.name}_score_input`}>{displayName}</label>
       <input

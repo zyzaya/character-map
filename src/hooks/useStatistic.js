@@ -4,6 +4,8 @@ import { setVisual } from '../state/statisticsSlice';
 export default function useStatistic(name) {
   const dispatch = useDispatch();
   const current = useSelector((state) => state.statistics)[name];
+  console.log(`${name}:${JSON.stringify(current)}`);
+  if (current === undefined) return ['none', () => {}];
 
   let set = (newVisual) => {
     if (newVisual === 'focused') {

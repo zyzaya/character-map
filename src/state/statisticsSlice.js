@@ -3,19 +3,19 @@ import { createSlice } from '@reduxjs/toolkit';
 export const statisticsSlice = createSlice({
   name: 'statisticsSlice',
   initialState: {
-    str_score: {
+    strength_score: {
       visual: 'none',
       sources: [],
-      affecting: ['str_mod'],
+      affecting: ['strength_modifier'],
     },
-    str_mod: {
+    strength_modifier: {
       visual: 'none',
-      sources: ['str_score'],
+      sources: ['strength_score'],
       affecting: ['athletics'],
     },
     athletics: {
       visual: 'none',
-      sources: ['str_mod', 'proficiency'],
+      sources: ['strength_modifier', 'proficiency'],
       affecting: [],
     },
   },
