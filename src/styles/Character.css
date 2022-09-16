@@ -1,0 +1,8 @@
+.character {
+  grid-area: 1 / 1 / 2 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, min-content);
+  column-gap: 5px;
+  justify-content: center;
+  margin: 20px 0;
+}

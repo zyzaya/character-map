@@ -1,6 +1,7 @@
 import React from 'react';
 import Class from './Class';
 import Level from './Level';
+import '../../styles/Character.css';
 
 export default function Character(props) {
   return (
