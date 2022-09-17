@@ -118,7 +118,7 @@ export let Statistics = {
   constitution_modifier: {
     visual: 'none',
     sources: ['constitution_score'],
-    affecting: ['constitution_save'],
+    affecting: ['constitution_save', 'hit_points'],
   },
   constitution_save: {
     visual: 'none',
