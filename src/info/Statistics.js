@@ -82,7 +82,13 @@ export let Statistics = {
   dexterity_modifier: {
     visual: 'none',
     sources: ['dexterity_score'],
-    affecting: ['acrobatics', 'sleight_of_hand', 'stealth'],
+    affecting: [
+      'acrobatics',
+      'sleight_of_hand',
+      'stealth',
+      'armor_class',
+      'initiative',
+    ],
   },
   dexterity_save: {
     visual: 'none',
