@@ -61,7 +61,3 @@ font-face {
   display: grid;
   grid-template-columns: 1fr min-content min-content;
 }
-
-.save_title {
-  justify-self: left;
-}
