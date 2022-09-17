@@ -75,7 +75,7 @@ export default function Sheet(props) {
       <div className="sheet_right">
         <div className="misc_stats">
           <ArmorInitiativeSpeed
-            strength_modifier={modifier(strength)}
+            strength={strength}
             dexterity_modifier={modifier(dexterity)}
             speed={30}
           ></ArmorInitiativeSpeed>
