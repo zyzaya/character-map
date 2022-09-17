@@ -12,6 +12,9 @@
   border-radius: 2px 10px;
   margin: auto;
   padding: 3px;
+}
+
+.armor_class.none {
   background-color: white;
 }
 
@@ -38,13 +41,14 @@
 
 .shield {
   display: grid;
-  grid-template-columns: min-content 1fr 1fr;
+  grid-template-columns: min-content 1fr min-content;
   column-gap: 3px;
 }
 
 .shield > label {
   justify-self: start;
   align-self: center;
+  width: 100%;
   white-space: nowrap;
 }
 
@@ -54,6 +58,7 @@
 
 .armor_output {
   font-size: xx-large;
-  width: min-content;
+  width: 100%;
+  text-align: center;
   margin: auto;
 }

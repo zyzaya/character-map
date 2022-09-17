@@ -19,6 +19,11 @@ export let Statistics = {
     sources: ['character_class', 'level', 'constitution_modifier'],
     affecting: [],
   },
+  armor_class: {
+    visual: 'none',
+    sources: ['dexterity_modifier'],
+    affecting: [],
+  },
   proficiency: {
     visual: 'none',
     sources: ['level'],

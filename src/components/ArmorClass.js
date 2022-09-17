@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import useStatistic from '../hooks/useStatistic';
 import { Armors } from '../info/Armors';
 import '../styles/ArmorClass.css';
 import AdditionalInfo from './AdditionalInfo';
@@ -10,6 +11,13 @@ export default function ArmorClass(props) {
   const [ac, setAC] = useState(10);
   const [armor, setArmor] = useState('none');
   const [shield, setShield] = useState(false);
+
+  const [visual, setVisual] = useStatistic('armor_class');
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
+  }
 
   useEffect(() => {
     let val = 0;
@@ -39,8 +47,8 @@ export default function ArmorClass(props) {
   }
 
   return (
-    <div className="armor_class">
-      <div className="armor_title">
+    <div className={`armor_class ${visual}`}>
+      <div className="armor_title" onClick={toggleVisual}>
         <div className="buttons">
           <AdditionalInfo></AdditionalInfo>
           <CycleArrow></CycleArrow>
@@ -93,7 +101,9 @@ export default function ArmorClass(props) {
           <AdditionalInfo></AdditionalInfo>
           <CycleArrow></CycleArrow>
         </div>
-        <label htmlFor="shield_input">Shield (+2 AC)</label>
+        <label htmlFor="shield_input" onClick={toggleVisual}>
+          Shield (+2 AC)
+        </label>
         <input
           type="checkbox"
           name="shield"
@@ -102,7 +112,9 @@ export default function ArmorClass(props) {
           onChange={onShieldChange}
         />
       </div>
-      <div className="armor_output">{ac}</div>
+      <div className="armor_output" onClick={toggleVisual}>
+        {ac}
+      </div>
     </div>
   );
 }
