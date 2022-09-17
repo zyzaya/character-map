@@ -3,7 +3,7 @@
   grid-template-rows: repeat(2, min-content);
 }
 
-.spells > :nth-child(even) {
+.spells > .none:nth-child(even) {
   background-color: rgb(233, 232, 231);
 }
 

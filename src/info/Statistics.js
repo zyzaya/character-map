@@ -34,6 +34,16 @@ export let Statistics = {
     sources: ['race'],
     affecting: [],
   },
+  spell_save: {
+    visual: 'none',
+    sources: ['proficiency', 'character_class'],
+    affecting: [],
+  },
+  spell_attack: {
+    visual: 'none',
+    sources: ['proficiency', 'character_class'],
+    affecting: [],
+  },
   proficiency: {
     visual: 'none',
     sources: ['level'],
@@ -62,6 +72,8 @@ export let Statistics = {
       'intimidation',
       'performance',
       'persuasion',
+      'spell_attack',
+      'spell_save',
     ],
   },
   strength_score: {
