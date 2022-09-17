@@ -7,6 +7,10 @@ export let Classes = {
     name: 'Barbarian',
     hit_die: 12,
   },
+  bard: {
+    name: 'Bard',
+    hit_die: 8,
+  },
   cleric: {
     name: 'Cleric',
     hit_die: 8,

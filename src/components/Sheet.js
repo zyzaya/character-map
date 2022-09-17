@@ -8,9 +8,10 @@ import SkillSection from './SkillSection';
 import '../styles/Sheet.css';
 import Character from './Character/Character';
 import { Classes } from '../info/Classes';
+import { useEffect } from 'react';
 
 export default function Sheet(props) {
-  const [char_class, setClass] = useState('artificer');
+  const [character_class, setClass] = useState('artificer');
   const [level, setLevel] = useState(1);
 
   const [proficiency, setProficiency] = useState(2);
@@ -21,6 +22,21 @@ export default function Sheet(props) {
   const [intelligence, setIntelligence] = useState(10);
   const [wisdom, setWisdom] = useState(10);
   const [charisma, setCharisma] = useState(10);
+
+  const [spell_modifier, setSpellModifier] = useState(0);
+  useEffect(() => {
+    if (['artificer', 'wizard'].includes(character_class)) {
+      setSpellModifier(modifier(intelligence));
+    } else if (
+      ['druid', 'cleric', 'ranger', 'monk'].includes(character_class)
+    ) {
+      setSpellModifier(modifier(wisdom));
+    } else if (
+      ['bard', 'paladin', 'sorcerer', 'warlock'].includes(character_class)
+    ) {
+      setSpellModifier(modifier(charisma));
+    }
+  }, [character_class, intelligence, wisdom, charisma]);
 
   function modifier(v) {
     return Math.floor((v - 10) / 2);
@@ -42,7 +58,7 @@ export default function Sheet(props) {
   return (
     <div className="sheet">
       <Character
-        class={char_class}
+        class={character_class}
         onClassChange={setClass}
         level={level}
         onLevelChange={setLevel}
@@ -81,7 +97,7 @@ export default function Sheet(props) {
           ></ArmorInitiativeSpeed>
           <Health
             level={level}
-            die_size={Classes[char_class].hit_die}
+            die_size={Classes[character_class].hit_die}
             constitution_modifier={modifier(constitution)}
           ></Health>
         </div>
@@ -89,7 +105,8 @@ export default function Sheet(props) {
           proficiency={proficiency}
           strength_modifier={modifier(strength)}
           dexterity_modifier={modifier(dexterity)}
-          spell_modifier={modifier(wisdom)}
+          character_class={character_class}
+          spell_modifier={spell_modifier}
         ></Offense>
       </div>
     </div>
