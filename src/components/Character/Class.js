@@ -3,15 +3,23 @@ import { Classes } from '../../info/Classes';
 import AdditionalInfo from '../AdditionalInfo';
 import CycleArrow from '../CycleArrow';
 import '../../styles/Class.css';
+import useStatistic from '../../hooks/useStatistic';
 
 export default function Class(props) {
+  const [visual, setVisual] = useStatistic('character_class');
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
+  }
+
   return (
-    <div className="class">
+    <div className={`class ${visual}`}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
       </div>
-      <label htmlFor="class" className="class_title">
+      <label htmlFor="class" className="class_title" onClick={toggleVisual}>
         Class
       </label>
       <select

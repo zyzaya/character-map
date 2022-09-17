@@ -1,7 +1,27 @@
 export let Statistics = {
-  proficiency: {
+  character_class: {
     visual: 'none',
     sources: [],
+    affecting: ['hit_dice', 'hit_points'],
+  },
+  level: {
+    visual: 'none',
+    sources: [],
+    affecting: ['hit_dice', 'hit_points', 'proficiency'],
+  },
+  hit_dice: {
+    visual: 'none',
+    sources: ['character_class', 'level'],
+    affecting: [],
+  },
+  hit_points: {
+    visual: 'none',
+    sources: ['class', 'level', 'constitution_modifier'],
+    affecting: [],
+  },
+  proficiency: {
+    visual: 'none',
+    sources: ['level'],
     affecting: [
       'strength_save',
       'dexterity_save',
