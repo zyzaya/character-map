@@ -14,6 +14,7 @@ export default function Offense(props) {
       <Spells
         proficiency={props.proficiency}
         modifier={props.spell_modifier}
+        character_class={props.character_class}
       ></Spells>
     </div>
   );
