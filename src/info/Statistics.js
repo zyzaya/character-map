@@ -24,6 +24,11 @@ export let Statistics = {
     sources: ['dexterity_modifier'],
     affecting: [],
   },
+  initiative: {
+    visual: 'none',
+    sources: ['dexterity_modifier'],
+    affecting: [],
+  },
   proficiency: {
     visual: 'none',
     sources: ['level'],
