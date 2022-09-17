@@ -25,17 +25,7 @@ export default function Proficiency(props) {
       >
         Proficiency Bonus
       </label>
-      <input
-        id="proficiency_value"
-        className="proficiency_value"
-        type="number"
-        min="2"
-        max="6"
-        value={props.value}
-        onChange={(e) => {
-          props.onChange(e.target.value);
-        }}
-      />
+      <div className="proficiency_value">{props.value}</div>
     </div>
   );
 }

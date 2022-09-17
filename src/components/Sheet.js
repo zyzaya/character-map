@@ -38,12 +38,12 @@ export default function Sheet(props) {
     }
   }, [character_class, intelligence, wisdom, charisma]);
 
+  useEffect(() => {
+    setProficiency(Math.floor((level - 1) / 4 + 2));
+  }, [level]);
+
   function modifier(v) {
     return Math.floor((v - 10) / 2);
-  }
-
-  function handleProficiencyChange(p) {
-    setProficiency(parseInt(p));
   }
 
   function handleScoreChange(name, value) {
@@ -64,10 +64,7 @@ export default function Sheet(props) {
         onLevelChange={setLevel}
       ></Character>
       <div className="sheet_left">
-        <Proficiency
-          value={proficiency}
-          onChange={handleProficiencyChange}
-        ></Proficiency>
+        <Proficiency value={proficiency}></Proficiency>
         <AbilitySection
           proficiency={proficiency}
           strength={strength}
