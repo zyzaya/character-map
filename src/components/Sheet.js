@@ -9,6 +9,8 @@ import '../styles/Sheet.css';
 import Character from './Character/Character';
 import { Classes } from '../info/Classes';
 import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setSpellAbility } from '../state/statisticsSlice';
 
 export default function Sheet(props) {
   const [character_class, setClass] = useState('artificer');
@@ -24,6 +26,8 @@ export default function Sheet(props) {
   const [charisma, setCharisma] = useState(10);
 
   const [spell_modifier, setSpellModifier] = useState(0);
+  const dispatch = useDispatch();
+
   useEffect(() => {
     if (['artificer', 'wizard'].includes(character_class)) {
       setSpellModifier(modifier(intelligence));
@@ -36,7 +40,8 @@ export default function Sheet(props) {
     ) {
       setSpellModifier(modifier(charisma));
     }
-  }, [character_class, intelligence, wisdom, charisma]);
+    dispatch(setSpellAbility(character_class));
+  }, [character_class, intelligence, wisdom, charisma, dispatch]);
 
   useEffect(() => {
     setProficiency(Math.floor((level - 1) / 4 + 2));

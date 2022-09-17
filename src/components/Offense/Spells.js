@@ -4,7 +4,6 @@ import '../../styles/Spells.css';
 import SpellAttack from './SpellAttack';
 
 export default function Spells(props) {
-  console.log(props.character_class);
   if (props.character_class === 'monk') {
     return (
       <div className="spells">
