@@ -2,15 +2,23 @@ import React from 'react';
 import AdditionalInfo from '../AdditionalInfo';
 import CycleArrow from '../CycleArrow';
 import '../../styles/Level.css';
+import useStatistic from '../../hooks/useStatistic';
 
 export default function Level(props) {
+  const [visual, setVisual] = useStatistic('level');
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
+  }
+
   return (
-    <div className="level">
+    <div className={`level ${visual}`}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
       </div>
-      <label htmlFor="level" className="level_title">
+      <label htmlFor="level" className="level_title" onClick={toggleVisual}>
         Level
       </label>
       <input
