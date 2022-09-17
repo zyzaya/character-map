@@ -2,14 +2,18 @@ import React from 'react';
 import AdditionalInfo from './AdditionalInfo';
 import CycleArrow from './CycleArrow';
 import '../styles/Proficiency.css';
+import useStatistic from '../hooks/useStatistic';
 
 export default function Proficiency(props) {
-  function onChange(e) {
-    props.onChange(e.target.value);
+  const [visual, setVisual] = useStatistic('proficiency');
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
   }
 
   return (
-    <div className="proficiency">
+    <div className={`proficiency ${visual}`} onClick={toggleVisual}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
@@ -24,7 +28,9 @@ export default function Proficiency(props) {
         min="2"
         max="6"
         value={props.value}
-        onChange={onChange}
+        onChange={(e) => {
+          props.onChange(e.target.value);
+        }}
       />
     </div>
   );

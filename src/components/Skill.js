@@ -37,9 +37,7 @@ export default function Skill(props) {
           type="checkbox"
           id={`${props.name}_skill_input`}
           value={proficient}
-          onChange={(e) => {
-            editProficient(e);
-          }}
+          onChange={editProficient}
         />
         <div className="skill_value">{displayValue}</div>
       </label>
