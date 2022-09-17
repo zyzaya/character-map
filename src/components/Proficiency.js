@@ -13,12 +13,16 @@ export default function Proficiency(props) {
   }
 
   return (
-    <div className={`proficiency ${visual}`} onClick={toggleVisual}>
+    <div className={`proficiency ${visual}`}>
       <div className="buttons">
         <AdditionalInfo></AdditionalInfo>
         <CycleArrow></CycleArrow>
       </div>
-      <label className="proficiency_title" htmlFor="proficiency_value">
+      <label
+        className="proficiency_title"
+        htmlFor="proficiency_value"
+        onClick={toggleVisual}
+      >
         Proficiency Bonus
       </label>
       <input
