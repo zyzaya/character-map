@@ -13,6 +13,9 @@
   width: min-content;
   margin: auto;
   padding: 3px;
+}
+
+.hitpoints.none {
   background-color: white;
 }
 

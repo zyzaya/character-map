@@ -16,7 +16,7 @@ export let Statistics = {
   },
   hit_points: {
     visual: 'none',
-    sources: ['class', 'level', 'constitution_modifier'],
+    sources: ['character_class', 'level', 'constitution_modifier'],
     affecting: [],
   },
   proficiency: {
