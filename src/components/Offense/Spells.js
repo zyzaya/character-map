@@ -10,6 +10,7 @@ export default function Spells(props) {
         <SpellSave
           proficiency={props.proficiency}
           modifier={props.modifier}
+          character_class={props.character_class}
         ></SpellSave>
       </div>
     );
@@ -32,6 +33,7 @@ export default function Spells(props) {
         <SpellSave
           proficiency={props.proficiency}
           modifier={props.modifier}
+          character_class={props.character_class}
         ></SpellSave>
       </div>
     );

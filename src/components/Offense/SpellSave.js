@@ -18,7 +18,7 @@ export default function SpellSave(props) {
           <AdditionalInfo></AdditionalInfo>
           <CycleArrow></CycleArrow>
         </div>
-        Spell Save DC
+        {`${props.character_class === 'monk' ? 'Ki' : 'Spell'}`} Save DC
       </div>
       <div className="spell_save_output">
         {8 + props.modifier + props.proficiency}
