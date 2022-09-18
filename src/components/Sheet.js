@@ -9,7 +9,6 @@ import '../styles/Sheet.css';
 import Character from './Character/Character';
 import { Classes } from '../info/Classes';
 import { useEffect } from 'react';
-import { setSpellAbility } from '../state/statisticsSlice';
 
 export default function Sheet(props) {
   const [character_class, setClass] = useState('artificer');

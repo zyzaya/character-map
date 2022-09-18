@@ -36,12 +36,24 @@ export let Statistics = {
   },
   spell_save: {
     visual: 'none',
-    sources: ['proficiency', 'character_class'],
+    sources: [
+      'proficiency',
+      'character_class',
+      'intelligence_modifier',
+      'wisdom_modifier',
+      'charisma_modifier',
+    ],
     affecting: [],
   },
   spell_attack: {
     visual: 'none',
-    sources: ['proficiency', 'character_class'],
+    sources: [
+      'proficiency',
+      'character_class',
+      'intelligence_modifier',
+      'wisdom_modifier',
+      'charisma_modifier',
+    ],
     affecting: [],
   },
   proficiency: {
