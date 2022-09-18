@@ -16,6 +16,7 @@ export default function Weapons(props) {
       </div>
       <Weapon
         name="Greatsword"
+        weapon_type="melee_weapon"
         modifier={props.strength_modifier}
         proficiency={props.proficiency}
         dice_count={2}
@@ -24,6 +25,7 @@ export default function Weapons(props) {
       ></Weapon>
       <Weapon
         name="Longbow"
+        weapon_type="range_weapon"
         modifier={props.dexterity_modifier}
         proficiency={props.proficiency}
         dice_count={1}
@@ -32,6 +34,7 @@ export default function Weapons(props) {
       ></Weapon>
       <Weapon
         name="Rapier"
+        weapon_type="finesse_weapon"
         modifier={Math.max(props.dexterity_modifier, props.strength_modifier)}
         proficiency={props.proficiency}
         dice_count={1}

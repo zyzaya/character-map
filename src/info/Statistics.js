@@ -56,6 +56,21 @@ export let Statistics = {
     ],
     affecting: [],
   },
+  melee_weapon: {
+    visual: 'none',
+    sources: ['proficiency', 'strength_modifier'],
+    affecting: [],
+  },
+  range_weapon: {
+    visual: 'none',
+    sources: ['proficiency', 'dexterity_modifier'],
+    affecting: [],
+  },
+  finesse_weapon: {
+    visual: 'none',
+    sources: ['proficiency', 'dexterity_modifier', 'strength_modifier'],
+    affecting: [],
+  },
   proficiency: {
     visual: 'none',
     sources: ['level'],
@@ -86,6 +101,9 @@ export let Statistics = {
       'persuasion',
       'spell_attack',
       'spell_save',
+      'melee_weapon',
+      'range_weapon',
+      'finesse_weapon',
     ],
   },
   strength_score: {
@@ -96,7 +114,7 @@ export let Statistics = {
   strength_modifier: {
     visual: 'none',
     sources: ['strength_score'],
-    affecting: ['strength_save', 'athletics'],
+    affecting: ['strength_save', 'athletics', 'melee_weapon', 'finesse_weapon'],
   },
   strength_save: {
     visual: 'none',
@@ -122,6 +140,8 @@ export let Statistics = {
       'stealth',
       'armor_class',
       'initiative',
+      'range_weapon',
+      'finesse_weapon',
     ],
   },
   dexterity_save: {

@@ -1,8 +1,16 @@
 import React from 'react';
+import useStatistic from '../../hooks/useStatistic';
 
 export default function Weapon(props) {
+  const [visual, setVisual] = useStatistic(props.weapon_type);
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
+  }
+
   return (
-    <div className="weapon">
+    <div className={`weapon ${visual}`} onClick={toggleVisual}>
       <div className="weapon_title">{props.name}</div>
       <div className="tohit">
         {'+ '}
