@@ -13,13 +13,13 @@
 }
 
 .focused {
-  background-color: green;
+  background-color: rgb(200, 255, 200);
 }
 
 .sourced {
-  background-color: red;
+  background-color: rgb(255, 200, 200);
 }
 
 .affected {
-  background-color: blue;
+  background-color: rgb(200, 200, 255);
 }
