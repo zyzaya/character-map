@@ -1,4 +1,3 @@
-import React from 'react';
 import SpellSave from './SpellSave';
 import '../../styles/Spells.css';
 import SpellAttack from './SpellAttack';
