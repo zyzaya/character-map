@@ -27,7 +27,6 @@ export default function useStatistic(name) {
         dispatch(setVisual({ name: a, visual: 'none' }));
       });
     }
-    console.log(`${name}:${current.visual}:${newVisual}`);
     dispatch(setVisual({ name: name, visual: newVisual }));
   };
 
