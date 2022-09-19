@@ -35,3 +35,9 @@
   width: min-content;
   margin: auto;
 }
+
+.hitpoints_calculation {
+  text-align: center;
+  font-size: x-small;
+  white-space: pre;
+}
