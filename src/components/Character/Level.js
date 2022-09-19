@@ -11,6 +11,10 @@ export default function Level(props) {
     setVisual(visual === 'focused' ? 'none' : 'focused');
   }
 
+  function onLevelChange(e) {
+    if (e.target.checkValidity()) props.onChange(e.target.value);
+  }
+
   return (
     <div className={`level ${visual}`}>
       <Buttons></Buttons>
@@ -25,9 +29,7 @@ export default function Level(props) {
         min="1"
         max="20"
         value={props.value}
-        onChange={(e) => {
-          props.onChange(e.target.value);
-        }}
+        onChange={onLevelChange}
       />
     </div>
   );
