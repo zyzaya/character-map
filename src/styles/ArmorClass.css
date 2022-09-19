@@ -5,7 +5,7 @@
 
 .armor_class {
   display: grid;
-  grid-template-rows: repeat(4, min-content) 1fr;
+  grid-template-rows: repeat(4, min-content) 1fr min-content;
   row-gap: 5px;
   align-items: center;
   border: 3px double black;
@@ -61,4 +61,10 @@
   width: 100%;
   text-align: center;
   margin: auto;
+}
+
+.armor_calculation {
+  text-align: center;
+  font-size: x-small;
+  white-space: pre;
 }

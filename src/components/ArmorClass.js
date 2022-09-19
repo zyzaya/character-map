@@ -9,8 +9,8 @@ import Buttons from './Buttons';
 export default function ArmorClass(props) {
   const [ac, setAC] = useState(10);
   const [armor, setArmor] = useState('none');
+  const [armor_calc, setArmorCalc] = useState('');
   const [shield, setShield] = useState(false);
-
   const [visual, setVisual] = useStatistic('armor_class');
 
   function toggleVisual(e) {
@@ -24,18 +24,29 @@ export default function ArmorClass(props) {
     if (equiped === undefined) equiped = Armors.light[armor];
     if (equiped === undefined) equiped = Armors.medium[armor];
     if (equiped === undefined) equiped = Armors.heavy[armor];
-
     val = equiped.base;
+    let dex_addition = '';
+
     if (equiped.dex !== undefined) {
-      if (equiped.dex === true || props.dexterity_modifier < equiped.dex)
+      if (equiped.dex === true) {
+        dex_addition = ` \n+ ${props.dexterity_modifier} (dexterity modifier)`;
         val += props.dexterity_modifier;
-      else val += equiped.dex;
+      } else if (props.dexterity_modifier <= equiped.dex) {
+        dex_addition = ` \n+ ${props.dexterity_modifier} (dexterity modifier, max ${equiped.dex})`;
+        val += props.dexterity_modifier;
+      } else if (props.dexterity_modifier > equiped.dex) {
+        dex_addition = ` \n+ ${equiped.dex} (dexterity modifier, max ${equiped.dex})`;
+        val += equiped.dex;
+      }
     }
 
     if (shield) val += 2;
-
+    let calc = `${equiped.base} (${equiped.name})${dex_addition}${
+      shield ? ' \n+ 2 (shield) ' : ''
+    }`;
+    setArmorCalc(calc);
     setAC(val);
-  }, [armor, shield, props.dexterity_modifier]);
+  }, [armor, shield, props.dexterity_modifier, armor_calc]);
 
   function onArmorChange(e) {
     setArmor(e.target.value);
@@ -104,6 +115,9 @@ export default function ArmorClass(props) {
       </div>
       <div className="armor_output" onClick={toggleVisual}>
         {ac}
+      </div>
+      <div className="armor_calculation" onClick={toggleVisual}>
+        {armor_calc}
       </div>
     </div>
   );
