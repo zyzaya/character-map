@@ -8,7 +8,7 @@ export const infoSlice = createSlice({
       state.value = action.payload;
     },
     setVisible: (state, action) => {
-      state.visiable = action.payload;
+      state.visible = action.payload;
     },
   },
 });

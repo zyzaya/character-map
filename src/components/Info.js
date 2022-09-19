@@ -3,6 +3,8 @@ import '../styles/Info.css';
 import yaml from 'js-yaml';
 import raw from '../info/Help.yaml';
 import { useSelector } from 'react-redux';
+import { setVisible } from '../state/infoSlice';
+import { useDispatch } from 'react-redux';
 
 export default function Info(props) {
   let [title, setTitle] = useState('');
@@ -10,6 +12,7 @@ export default function Info(props) {
   let [data, setData] = useState(undefined);
   const visible = useSelector((state) => state.info.visible);
   const key = useSelector((state) => state.info.value);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     fetch(raw)
@@ -34,11 +37,17 @@ export default function Info(props) {
     else setBody(data.strength_score.info);
   }, [body, data, key]);
 
+  function handleClose(e) {
+    dispatch(setVisible(false));
+  }
+
   return (
     <div className={`info ${visible ? '' : 'hidden'}`}>
       <div className="info_container">
         <h1 className="info_title">{title}</h1>
-        <button className="info_close">Close</button>
+        <button className="info_close" onClick={handleClose}>
+          Close
+        </button>
         <hr className="separator"></hr>
         <div className="info_text">{body}</div>
       </div>

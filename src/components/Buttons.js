@@ -5,7 +5,7 @@ import '../styles/Buttons.css';
 export default function Buttons(props) {
   return (
     <div className="buttons">
-      <AdditionalInfo></AdditionalInfo>
+      <AdditionalInfo name={props.name}></AdditionalInfo>
     </div>
   );
 }
