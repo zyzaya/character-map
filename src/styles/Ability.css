@@ -13,10 +13,6 @@ font-face {
   background-color: rgb(233, 232, 231);
 }
 
-.buttons {
-  white-space: nowrap;
-}
-
 .score {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
