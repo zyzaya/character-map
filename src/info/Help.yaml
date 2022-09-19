@@ -1,0 +1,40 @@
+strength_score:
+  title: "Strength (STR) Ability Score"
+  info: |
+    Page 175 of the Player's Handbook outlines that your Strength ability measures bodily power, athletic training, and the extent to which you can exert raw physical force.
+
+    Your ability score comes from a combination of character creation and your race. Ability Score Improvements and Feats gained from leveling up can also
+    increase your ability score.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. There is also
+    a summary table of what races increase what abililty scores on page 12.
+    The races Mountain Dwarf, Half-Orc, Dragonborn, and Human allow for increases in Strength.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+    The Feats Heavy Armor Master, Heavily Armored, Weapon Master,
+    Moderately Armored, Lightly Armored, Athlete, Tavern Brawler,
+    Skill Expert, and Resiliant allow for increases in Strength.
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+strength_modifier:
+  title: "Strength (STR) Ability Modifier"
+  info: |
+    This is the information about the strength ability modifier
+stength_save:
+  title: "Strength (STR) Saving Throw"
+  info: |
+    Thiss is the information about the strength saving throw
+athletics:
+  title: "Athletics"
+  info: |
+    This is the information about athletics

@@ -9,7 +9,6 @@ import '../styles/Sheet.css';
 import Character from './Character/Character';
 import { Classes } from '../info/Classes';
 import { useEffect } from 'react';
-import Info from './Info';
 
 export default function Sheet(props) {
   const [character_class, setClass] = useState('artificer');

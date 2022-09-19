@@ -3,11 +3,16 @@
   src: url(./fonts/Interstate-light.ttf);
 }
 
+.body {
+  width: 100vw;
+  height: 100vh;
+}
+
 .App {
-  min-width: 1000px;
-  max-width: 1200px;
+  width: 100vw;
+  height: 100vh;
   padding: 10px;
-  margin: auto;
+  margin: 0;
   padding: 0;
   font-family: Interstate-light;
   font-size: small;
