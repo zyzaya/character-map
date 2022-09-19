@@ -1,7 +1,6 @@
 import React from 'react';
 import useStatistic from '../../hooks/useStatistic';
-import AdditionalInfo from '../AdditionalInfo';
-import CycleArrow from '../CycleArrow';
+import Buttons from '../Buttons';
 
 export default function SpellSave(props) {
   const [visual, setVisual] = useStatistic('spell_save');
@@ -14,10 +13,7 @@ export default function SpellSave(props) {
   return (
     <div className={`spell_save ${visual}`} onClick={toggleVisual}>
       <div className="spell_save_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         {`${props.character_class === 'monk' ? 'Ki' : 'Spell'}`} Save DC
       </div>
       <div className="spell_save_output">

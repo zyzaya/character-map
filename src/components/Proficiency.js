@@ -1,6 +1,5 @@
 import React from 'react';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 import '../styles/Proficiency.css';
 import useStatistic from '../hooks/useStatistic';
 
@@ -14,10 +13,7 @@ export default function Proficiency(props) {
 
   return (
     <div className={`proficiency ${visual}`}>
-      <div className="buttons">
-        <AdditionalInfo></AdditionalInfo>
-        <CycleArrow></CycleArrow>
-      </div>
+      <Buttons></Buttons>
       <label
         className="proficiency_title"
         htmlFor="proficiency_value"

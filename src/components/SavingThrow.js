@@ -1,8 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import useStatistic from '../hooks/useStatistic';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 
 export default function SavingThrow(props) {
   const [proficient, setProficient] = useState(false);
@@ -24,10 +23,7 @@ export default function SavingThrow(props) {
 
   return (
     <div className={`save ${visual}`}>
-      <div className="buttons">
-        <AdditionalInfo></AdditionalInfo>
-        <CycleArrow></CycleArrow>
-      </div>
+      <Buttons></Buttons>
       <label htmlFor={`${props.name}_save_input`}>
         <div className="save_title" onClick={toggleVisual}>
           Saving Throw

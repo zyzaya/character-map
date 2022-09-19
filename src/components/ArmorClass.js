@@ -4,8 +4,7 @@ import { useState } from 'react';
 import useStatistic from '../hooks/useStatistic';
 import { Armors } from '../info/Armors';
 import '../styles/ArmorClass.css';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 
 export default function ArmorClass(props) {
   const [ac, setAC] = useState(10);
@@ -49,17 +48,11 @@ export default function ArmorClass(props) {
   return (
     <div className={`armor_class ${visual}`}>
       <div className="armor_title" onClick={toggleVisual}>
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Armor Class
       </div>
       <div className="equipped_armor">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         <select name="armor" onChange={onArmorChange}>
           <option value="none">{Armors.none.name}</option>
           <optgroup label="Light Armor">
@@ -97,10 +90,7 @@ export default function ArmorClass(props) {
         </select>
       </div>
       <div className="shield">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         <label htmlFor="shield_input" onClick={toggleVisual}>
           Shield (+2 AC)
         </label>

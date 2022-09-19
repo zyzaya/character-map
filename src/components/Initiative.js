@@ -1,6 +1,5 @@
 import React from 'react';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 import '../styles/Initiative.css';
 import useStatistic from '../hooks/useStatistic';
 
@@ -18,10 +17,7 @@ export default function Initiative(props) {
   return (
     <div className={`initiative ${visual}`} onClick={toggleVisual}>
       <div className="initiative_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Initiative
       </div>
       <div className="initiative_output">{displayValue}</div>

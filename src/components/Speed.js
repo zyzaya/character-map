@@ -1,6 +1,5 @@
 import React from 'react';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 import '../styles/Speed.css';
 import useStatistic from '../hooks/useStatistic';
 
@@ -15,10 +14,7 @@ export default function Speed(props) {
   return (
     <div className={`speed ${visual}`} onClick={toggleVisual}>
       <div className="speed_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Speed
       </div>
       <div className="speed_output">{`${props.value}ft`}</div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import useStatistic from '../../hooks/useStatistic';
-import AdditionalInfo from '../AdditionalInfo';
-import CycleArrow from '../CycleArrow';
+import Buttons from '../Buttons';
 
 export default function SpellAttack(props) {
   const [visual, setVisual] = useStatistic('spell_attack');
@@ -14,10 +13,7 @@ export default function SpellAttack(props) {
   return (
     <div className={`spell_attack ${visual}`} onClick={toggleVisual}>
       <div className="spell_attack_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Spell Attack Bonus
       </div>
       <div className="spell_attack_output">

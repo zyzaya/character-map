@@ -1,6 +1,5 @@
 import React from 'react';
-import AdditionalInfo from '../AdditionalInfo';
-import CycleArrow from '../CycleArrow';
+import Buttons from '../Buttons';
 import '../../styles/HitPoints.css';
 import useStatistic from '../../hooks/useStatistic';
 
@@ -19,10 +18,7 @@ export default function HitDice(props) {
   return (
     <div className={`hitpoints ${visual}`} onClick={toggleVisual}>
       <div className="hitpoints_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Hit Point Maximum
       </div>
       <div className="hitpoints_output">{value}</div>

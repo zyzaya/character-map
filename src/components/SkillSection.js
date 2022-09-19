@@ -1,6 +1,5 @@
 import React from 'react';
-import CycleArrow from './CycleArrow';
-import AdditionalInfo from './AdditionalInfo';
+import Buttons from './Buttons';
 import StrengthSkills from './Skills/StrengthSkills';
 import DexteritySkills from './Skills/DexteritySkills';
 import ConstitutionSkills from './Skills/ConstitutionSkills';
@@ -13,10 +12,7 @@ export default function SkillSection(props) {
   return (
     <div className="skills_section">
       <div className="skill_section_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Skills
       </div>
 

@@ -1,6 +1,5 @@
 import React from 'react';
-import AdditionalInfo from '../AdditionalInfo';
-import CycleArrow from '../CycleArrow';
+import Buttons from '../Buttons';
 import '../../styles/Level.css';
 import useStatistic from '../../hooks/useStatistic';
 
@@ -14,10 +13,7 @@ export default function Level(props) {
 
   return (
     <div className={`level ${visual}`}>
-      <div className="buttons">
-        <AdditionalInfo></AdditionalInfo>
-        <CycleArrow></CycleArrow>
-      </div>
+      <Buttons></Buttons>
       <label htmlFor="level" className="level_title" onClick={toggleVisual}>
         Level
       </label>

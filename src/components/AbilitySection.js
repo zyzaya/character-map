@@ -1,17 +1,13 @@
 import React from 'react';
 import Ability from './Ability';
-import CycleArrow from './CycleArrow';
-import AdditionalInfo from './AdditionalInfo';
+import Buttons from './Buttons';
 import '../styles/AbilitySection.css';
 
 export default function AbilitySection(props) {
   return (
     <div className="ability_section">
       <div className="ability_section_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Ability Scores
       </div>
 

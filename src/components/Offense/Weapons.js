@@ -1,6 +1,5 @@
 import React from 'react';
-import AdditionalInfo from '../AdditionalInfo';
-import CycleArrow from '../CycleArrow';
+import Buttons from '../Buttons';
 import Weapon from './Weapon';
 import '../../styles/Weapons.css';
 
@@ -8,10 +7,7 @@ export default function Weapons(props) {
   return (
     <div className="weapons">
       <div className="weapons_title">
-        <div className="buttons">
-          <AdditionalInfo></AdditionalInfo>
-          <CycleArrow></CycleArrow>
-        </div>
+        <Buttons></Buttons>
         Weapons
       </div>
       <Weapon

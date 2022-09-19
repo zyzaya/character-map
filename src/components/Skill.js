@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import useStatistic from '../hooks/useStatistic';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 
 export default function Skill(props) {
   const [proficient, setProficient] = useState(false);
@@ -25,10 +24,7 @@ export default function Skill(props) {
 
   return (
     <div className={`skill ${visual}`}>
-      <div className="buttons">
-        <AdditionalInfo></AdditionalInfo>
-        <CycleArrow></CycleArrow>
-      </div>
+      <Buttons></Buttons>
       <label htmlFor={`${props.name}_skill_input`}>
         <div className="skill_title" onClick={toggleVisual}>
           {displayName}

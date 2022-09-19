@@ -1,7 +1,6 @@
 import React from 'react';
 import useStatistic from '../hooks/useStatistic';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 
 export default function AbilityModifier(props) {
   const [visual, setVisual] = useStatistic(`${props.name}_modifier`);
@@ -15,10 +14,7 @@ export default function AbilityModifier(props) {
   let displayValue = `${value >= 0 ? `+${value}` : value}`;
   return (
     <div className={`modifier ${visual}`} onClick={toggleVisual}>
-      <div className="buttons">
-        <AdditionalInfo></AdditionalInfo>
-        <CycleArrow></CycleArrow>
-      </div>
+      <Buttons></Buttons>
       <div className="modifier_title">Ability Modifier</div>
       <div className="modifier_value">{displayValue}</div>
     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Classes } from '../../info/Classes';
-import AdditionalInfo from '../AdditionalInfo';
-import CycleArrow from '../CycleArrow';
+import Buttons from '../Buttons';
 import '../../styles/Class.css';
 import useStatistic from '../../hooks/useStatistic';
 
@@ -15,10 +14,7 @@ export default function Class(props) {
 
   return (
     <div className={`class ${visual}`}>
-      <div className="buttons">
-        <AdditionalInfo></AdditionalInfo>
-        <CycleArrow></CycleArrow>
-      </div>
+      <Buttons></Buttons>
       <label htmlFor="class" className="class_title" onClick={toggleVisual}>
         Class
       </label>

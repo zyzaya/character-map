@@ -1,6 +1,5 @@
 import React from 'react';
-import AdditionalInfo from './AdditionalInfo';
-import CycleArrow from './CycleArrow';
+import Buttons from './Buttons';
 import useStatistic from '../hooks/useStatistic';
 
 export default function AbilityScore(props) {
@@ -21,10 +20,7 @@ export default function AbilityScore(props) {
 
   return (
     <div className={`score ${visual}`}>
-      <div className="buttons">
-        <AdditionalInfo></AdditionalInfo>
-        <CycleArrow></CycleArrow>
-      </div>
+      <Buttons></Buttons>
       <label htmlFor={`${props.name}_score_input`} onClick={toggleVisual}>
         {displayName}
       </label>
