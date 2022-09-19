@@ -17,7 +17,9 @@ export default function SpellSave(props) {
         {`${props.character_class === 'monk' ? 'Ki' : 'Spell'}`} Save DC
       </div>
       <div className="spell_save_output">
-        {8 + props.modifier + props.proficiency}
+        <span className="spell_save_value">
+          {8 + props.modifier + props.proficiency}
+        </span>
       </div>
       <div className="spell_save_calculation">
         {`8 + ${props.proficiency} (proficiency) + ${props.modifier} (${props.modifier_name})`}

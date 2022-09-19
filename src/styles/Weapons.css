@@ -35,6 +35,6 @@
   white-space: nowrap;
 }
 
-.attack_modifier, .dice_count, .dice_size {
+.attack_modifier {
   border-bottom: 1px solid black;
 }

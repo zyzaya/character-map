@@ -30,7 +30,8 @@
   white-space: nowrap;
 }
 
-.spell_attack_modifier {
+
+.spell_attack_modifier, .spell_save_value {
   border-bottom: 1px solid black;
 }
 

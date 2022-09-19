@@ -21,7 +21,7 @@ export default function Weapon(props) {
       </div>
       <div className="damage">
         <span className="dice_count">{props.dice_count}</span>
-        {' d '}
+        {'d'}
         <span className="dice_size">{props.dice_size}</span>{' '}
         <span className="damage_type">{props.damage_type}</span>
         {' damage on hit.'}
