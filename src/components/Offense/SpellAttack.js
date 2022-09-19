@@ -22,6 +22,9 @@ export default function SpellAttack(props) {
           {props.modifier + props.proficiency}
         </span>
       </div>
+      <div className="spell_attack_calculation">
+        {`${props.proficiency} (proficiency) + ${props.modifier} (${props.modifier_name})`}
+      </div>
     </div>
   );
 }
