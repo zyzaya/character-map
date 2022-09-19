@@ -33,3 +33,10 @@
 .spell_attack_modifier {
   border-bottom: 1px solid black;
 }
+
+.spell_save_calculation {
+  grid-area: 2 / 1 / 3 / -1;
+  text-align: center;
+  font-size: x-small;
+  white-space: pre;
+}

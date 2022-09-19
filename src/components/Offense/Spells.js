@@ -1,6 +1,7 @@
 import SpellSave from './SpellSave';
 import '../../styles/Spells.css';
 import SpellAttack from './SpellAttack';
+import { Classes } from '../../info/Classes';
 
 export default function Spells(props) {
   if (props.character_class === 'monk') {
@@ -29,10 +30,12 @@ export default function Spells(props) {
         <SpellAttack
           proficiency={props.proficiency}
           modifier={props.modifier}
+          modifier_name={Classes[props.character_class].spell_modifier}
         ></SpellAttack>
         <SpellSave
           proficiency={props.proficiency}
           modifier={props.modifier}
+          modifier_name={Classes[props.character_class].spell_modifier}
           character_class={props.character_class}
         ></SpellSave>
       </div>

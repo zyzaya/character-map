@@ -19,6 +19,9 @@ export default function SpellSave(props) {
       <div className="spell_save_output">
         {8 + props.modifier + props.proficiency}
       </div>
+      <div className="spell_save_calculation">
+        {`8 + ${props.proficiency} (proficiency) + ${props.modifier} (${props.modifier_name})`}
+      </div>
     </div>
   );
 }

@@ -8,8 +8,6 @@ export default function HitDice(props) {
   const [hitpoints_calc, setHitPointsCalc] = useState('');
 
   useEffect(() => {
-    // 8 (hit dice size) + c (constitution modifier)
-    // + L (levels after first) * (5 + constitution modifier)
     let output = `${props.size} (hit dice) + ${props.constitution_modifier} (constitution modifier)`;
     if (props.level > 1) {
       output += `\n+ ${props.level - 1} (levels after first) * (${
