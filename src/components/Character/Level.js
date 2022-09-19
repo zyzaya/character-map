@@ -12,7 +12,8 @@ export default function Level(props) {
   }
 
   function onLevelChange(e) {
-    if (e.target.checkValidity()) props.onChange(e.target.value);
+    if (e.target.checkValidity() && e.target.value !== '')
+      props.onChange(e.target.value);
   }
 
   return (

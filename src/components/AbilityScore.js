@@ -10,8 +10,9 @@ export default function AbilityScore(props) {
     setVisual(visual === 'focused' ? 'none' : 'focused');
   }
 
-  function editValue(e) {
-    props.onChange(parseInt(e.target.value));
+  function onScoreChange(e) {
+    if (e.target.checkValidity() && e.target.value !== '')
+      props.onChange(parseInt(e.target.value));
   }
 
   let short = props.name.substring(0, 3).toUpperCase();
@@ -30,7 +31,7 @@ export default function AbilityScore(props) {
         min="1"
         max="30"
         value={props.score}
-        onChange={editValue}
+        onChange={onScoreChange}
       />
     </div>
   );
