@@ -12,13 +12,9 @@ export default function Proficiency(props) {
   }
 
   return (
-    <div className={`proficiency ${visual}`}>
+    <div className={`proficiency ${visual}`} onClick={toggleVisual}>
       <Buttons></Buttons>
-      <label
-        className="proficiency_title"
-        htmlFor="proficiency_value"
-        onClick={toggleVisual}
-      >
+      <label className="proficiency_title" htmlFor="proficiency_value">
         Proficiency Bonus
       </label>
       <div className="proficiency_value">{props.value}</div>
