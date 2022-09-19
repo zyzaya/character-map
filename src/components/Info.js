@@ -30,10 +30,6 @@ export default function Info(props) {
     else setBody(data.strength_score.info);
   }, [body, data]);
 
-  // if (data !== undefined) {
-  //   console.log('asdfasdf');
-  //   console.log(data);
-  // }
   return (
     <div className="info">
       <div className="info_container">

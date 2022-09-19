@@ -12,6 +12,6 @@ export const statisticsSlice = createSlice({
   },
 });
 
-export const { setVisual, setSpellAbility } = statisticsSlice.actions;
+export const { setVisual } = statisticsSlice.actions;
 
 export default statisticsSlice.reducer;
