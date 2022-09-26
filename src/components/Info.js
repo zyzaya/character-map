@@ -34,7 +34,7 @@ export default function Info(props) {
   }, [title, data, key]);
   useEffect(() => {
     if (data === undefined || data[key] === undefined) setBody('');
-    else setBody(data.strength_score.info);
+    else setBody(data[key].info);
   }, [body, data, key]);
 
   function handleClose(e) {

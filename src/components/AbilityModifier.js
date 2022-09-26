@@ -14,7 +14,7 @@ export default function AbilityModifier(props) {
   let displayValue = `${value >= 0 ? `+${value}` : value}`;
   return (
     <div className={`modifier ${visual}`} onClick={toggleVisual}>
-      <Buttons></Buttons>
+      <Buttons name={`${props.name}_modifier`}></Buttons>
       <div className="modifier_title">Ability Modifier</div>
       <div className="modifier_value">{displayValue}</div>
     </div>

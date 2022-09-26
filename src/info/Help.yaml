@@ -26,7 +26,10 @@ strength_score:
 strength_modifier:
   title: "Strength (STR) Modifier"
   info: |
-    This is the information about the strength ability modifier
+    Page 175 of the Player's Handbook outlines that your Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
 stength_save:
   title: "Strength (STR) Saving Throw"
   info: |
@@ -61,7 +64,10 @@ dexterity_score:
 dexterity_modifier:
   title: "Dexterity (DEX) Modifier"
   info: |
-    Aaa
+    Page 176 of the Player's Handbook outlines that your Dexterity measures any attempt to move nimbly, quickly, quietly, or to keep from falling on tricky footing.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
 dexterity_save:
   title: "Dexterity (DEX) Saving Throw"
   info: |
