@@ -127,6 +127,43 @@ constitution_save:
 
     The number consists of your modifier and, if you are proficient, your proficiency bonus.
     Each class gives proficiency in at least two saving throws.
+intelligence_score:
+  title: "Intelligence (INT) Ability Score"
+  info: |
+    Page 177 of the Player's Handbook describes that your Intelligence measures mental acuity, accuracy of recall, and the ability to reason.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races high elf, tiefling, gnome, and human allow for increases to intelligence.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+intelligence_modifier:
+  title: "Intelligence (INT) Modifier"
+  info: |
+    Page 177 of the Player's Handbook describes that your Intelligence measures mental acuity, accuracy of recall, and the ability to reason.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+intelligence_save:
+  title: "Intelligence (INT) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
 wisdom_score:
   title: "Wisdom (WIS) Ability Score"
   info: |
