@@ -37,14 +37,13 @@ font-face {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   column-gap: 3px;
-  padding: 8px 0;
   align-items: center;
 }
 
-.modifier_title {
-  justify-self: left;
-  height: 100%;
+.modifier_title, .modifier_value {
+  padding: 8px 0;
 }
+
 
 .save {
   display: grid;
