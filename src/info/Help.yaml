@@ -24,7 +24,7 @@ strength_score:
     The Fighter class gets additional Ability Score Improvements at levels 6
     and 14, as indicated in the table on page 71 of the Player's Handbook.
 strength_modifier:
-  title: "Strength (STR) Ability Modifier"
+  title: "Strength (STR) Modifier"
   info: |
     This is the information about the strength ability modifier
 stength_save:
@@ -58,3 +58,23 @@ dexterity_score:
     Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
     The Fighter class gets additional Ability Score Improvements at levels 6
     and 14, as indicated in the table on page 71 of the Player's Handbook.
+dexterity_modifier:
+  title: "Dexterity (DEX) Modifier"
+  info: |
+    Aaa
+dexterity_save:
+  title: "Dexterity (DEX) Saving Throw"
+  info: |
+    asadf
+acrobatics:
+  title: "Acrobatics"
+  info: |
+    asdfasdf
+sleight_of_hand:
+  title: "Sleight of Hand"
+  info: |
+    asdfasd
+stealth: 
+  title: "Stealth"
+  info: |
+    asdf
