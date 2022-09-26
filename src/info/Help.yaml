@@ -90,3 +90,40 @@ stealth:
   title: "Stealth"
   info: |
     stealth information
+constitution_score:
+  title: "Constitution (CON) Ability Score"
+  info: |
+    Page 176 of the Player's Handbook outlines that your Constitution measures health, stamina, and vital force.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races dwarf, half-orc, stout halfling, human, and rock gnome allow for increases in constitution.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+constitution_modifier:
+  title: "Constitution (CON) Modifier"
+  info: |
+    Page 176 of the Player's Handbook outlines that your Constitution measures health, stamina, and vital force.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+constitution_save:
+  title: "Constitution (CON) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
