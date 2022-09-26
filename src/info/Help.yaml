@@ -40,7 +40,7 @@ strength_save:
 athletics:
   title: "Athletics"
   info: |
-    This is the information about athletics
+    athletics information
 dexterity_score:
   title: "Dexterity (DEX) Ability Score"
   info: |
@@ -81,12 +81,12 @@ dexterity_save:
 acrobatics:
   title: "Acrobatics"
   info: |
-    asdfasdf
+    acrobatics information
 sleight_of_hand:
   title: "Sleight of Hand"
   info: |
-    asdfasd
+    sleight of hand information
 stealth: 
   title: "Stealth"
   info: |
-    asdf
+    stealth information
