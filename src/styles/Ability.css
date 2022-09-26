@@ -55,10 +55,8 @@ font-face {
 .save > label {
   display: grid;
   grid-template-columns: 1fr min-content min-content;
-  height: 100%;
 }
 
-.save_title {
-  height: 100%;
+.save_title, .save_value {
   padding: 8px 0;
 }
