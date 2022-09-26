@@ -23,7 +23,7 @@ export default function SavingThrow(props) {
 
   return (
     <div className={`save ${visual}`}>
-      <Buttons></Buttons>
+      <Buttons name={`${props.name}_save`}></Buttons>
       <label htmlFor={`${props.name}_save_input`}>
         <div className="save_title" onClick={toggleVisual}>
           Saving Throw

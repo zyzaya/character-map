@@ -30,10 +30,13 @@ strength_modifier:
 
     Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
     To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
-stength_save:
+strength_save:
   title: "Strength (STR) Saving Throw"
   info: |
-    Thiss is the information about the strength saving throw
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
 athletics:
   title: "Athletics"
   info: |
@@ -71,7 +74,10 @@ dexterity_modifier:
 dexterity_save:
   title: "Dexterity (DEX) Saving Throw"
   info: |
-    asadf
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
 acrobatics:
   title: "Acrobatics"
   info: |
