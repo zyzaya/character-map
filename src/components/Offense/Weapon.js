@@ -2,18 +2,10 @@ import React from 'react';
 import useStatistic from '../../hooks/useStatistic';
 
 export default function Weapon(props) {
-  // const [meleeVisual, setMeleeVisual] = useStatistic('melee_weapon');
-  // const [rangeVisual, setRangeVisual] = useStatistic('range_weapon');
-  // const [finesseVisual, setFinesseVisual] = useStatistic('finesse_weapon');
-
-  // function toggleVisual(e) {
-  //   e.preventDefault();
-  //   setVisual(visual === 'focused' ? 'none' : 'focused');
-  // }
-
   let to_hit_modifier;
   let damage;
   let modifier;
+  let weapon_type;
 
   function setModifier(source) {
     if (source === 'dexterity') {
@@ -31,13 +23,26 @@ export default function Weapon(props) {
     if (props.dexterity_modifier > props.strength_modifier)
       setModifier('dexterity');
     else setModifier('strength');
-  } else if (props.weapon.melee) setModifier('strength');
-  else setModifier('dexterity');
+    weapon_type = 'finesse_weapon';
+  } else if (props.weapon.melee) {
+    setModifier('strength');
+    weapon_type = 'melee_weapon';
+  } else {
+    setModifier('dexterity');
+    weapon_type = 'range_weapon';
+  }
 
   let to_hit = to_hit_modifier + props.proficiency;
 
+  const [visual, setVisual] = useStatistic(weapon_type);
+
+  function toggleVisual(e) {
+    e.preventDefault();
+    setVisual(visual === 'focused' ? 'none' : 'focused');
+  }
+
   return (
-    <tr className="weapon none">
+    <tr className={`weapon ${visual}`} onClick={toggleVisual}>
       <td>{props.weapon.name}</td>
       <td>
         <div className="to_hit">{`+${to_hit} to hit`}</div>
