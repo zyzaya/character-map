@@ -3,7 +3,6 @@ import { Weapons } from '../../info/Weapons';
 export default function WeaponSelect(props) {
   function onWeaponChange(e) {
     props.onWeaponSelect(e.target.value);
-    console.log(e);
   }
 
   return (

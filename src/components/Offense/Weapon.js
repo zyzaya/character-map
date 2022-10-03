@@ -42,20 +42,25 @@ export default function Weapon(props) {
   }
 
   return (
-    <tr className={`weapon ${visual}`} onClick={toggleVisual}>
-      <td>{props.weapon.name}</td>
-      <td>
+    <tr className={`weapon ${visual}`}>
+      <td className="remove_weapon">
+        <button className="small_button" onClick={props.onRemove}>
+          X
+        </button>
+      </td>
+      <td onClick={toggleVisual}>{props.weapon.name}</td>
+      <td onClick={toggleVisual}>
         <div className="to_hit">{`+${to_hit} to hit`}</div>
         <div className="to_hit_calculation">{`${props.proficiency} (proficiency) + ${to_hit_modifier} (${modifier} modifier)`}</div>
       </td>
-      <td>
+      <td onClick={toggleVisual}>
         <div className="damage">
           {`${props.weapon.damage} + ${damage}`}
           <span className="damage_calculation">{` (${modifier} modifier) `}</span>
           {props.weapon.damage_type}
         </div>
       </td>
-      <td>{props.weapon.properties.join(', ')}</td>
+      <td onClick={toggleVisual}>{props.weapon.properties.join(', ')}</td>
     </tr>
   );
 }

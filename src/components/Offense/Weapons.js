@@ -14,8 +14,12 @@ export default function Weapons(props) {
     setWeaponList(new_list);
   }
 
+  function removeWeapon(weapon) {
+    let new_list = weapon_list.filter((v) => v !== weapon);
+    setWeaponList(new_list);
+  }
+
   function handleWeaponSelect(value) {
-    console.log(value);
     addWeapon(value);
   }
 
@@ -44,6 +48,7 @@ export default function Weapons(props) {
                   strength_modifier={props.strength_modifier}
                   dexterity_modifier={props.dexterity_modifier}
                   weapon={weapon}
+                  onRemove={() => removeWeapon(v)}
                   key={i}
                 />
               );
@@ -63,6 +68,7 @@ export default function Weapons(props) {
                   strength_modifier={props.strength_modifier}
                   dexterity_modifier={props.dexterity_modifier}
                   weapon={weapon}
+                  onRemove={() => removeWeapon(v)}
                   key={i}
                 />
               );
@@ -82,6 +88,7 @@ export default function Weapons(props) {
                   strength_modifier={props.strength_modifier}
                   dexterity_modifier={props.dexterity_modifier}
                   weapon={weapon}
+                  onRemove={() => removeWeapon(v)}
                   key={i}
                 />
               );
@@ -101,6 +108,7 @@ export default function Weapons(props) {
                   strength_modifier={props.strength_modifier}
                   dexterity_modifier={props.dexterity_modifier}
                   weapon={weapon}
+                  onRemove={() => removeWeapon(v)}
                   key={i}
                 />
               );
