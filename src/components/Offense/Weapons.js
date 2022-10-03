@@ -21,13 +21,15 @@ export default function Weapons(props) {
 
   return (
     <div className="weapons">
-      <div className="weapons_title">
-        <Buttons></Buttons>
-        Weapons
-      </div>
-      <div>
-        Add Weapon:
-        <WeaponSelect onWeaponSelect={handleWeaponSelect} />
+      <div className="weapons_header">
+        <div className="weapons_title">
+          <Buttons></Buttons>
+          Weapons
+        </div>
+        <div className="add_weapons">
+          Add Weapon:
+          <WeaponSelect onWeaponSelect={handleWeaponSelect} />
+        </div>
       </div>
       <div className="weapon_table_title">Simple Melee Weapons</div>
       <table className="simple_melee none">

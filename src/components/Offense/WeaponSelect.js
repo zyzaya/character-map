@@ -7,7 +7,12 @@ export default function WeaponSelect(props) {
   }
 
   return (
-    <select name="weapon_select" id="weapon_select" onChange={onWeaponChange}>
+    <select
+      name="weapon_select"
+      id="weapon_select"
+      className="weapon_select"
+      onChange={onWeaponChange}
+    >
       <optgroup label="Simple Melee Weapons">
         {Object.keys(Weapons.simple_melee).map((k) => {
           return (

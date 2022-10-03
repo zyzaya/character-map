@@ -8,6 +8,13 @@
   grid-template-rows: repeat(3, min-content);
 }
 
+.weapons_header {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  padding: 5px 0;
+  border-bottom: 1px solid black;
+}
+
 .weapons_title {
   display: grid;
   grid-template-columns: min-content 1fr;
@@ -17,13 +24,29 @@
   font-family: Interstate-bold;
   font-size: medium;
   white-space: nowrap;
-  border-bottom: 1px solid black;
+  
+}
+
+.add_weapons {
+  margin-left: 5px;
+  white-space: nowrap;
+}
+
+.weapon_select {
+  margin-left: 5px;
+}
+
+.weapons > table {
+  border-spacing: 1px 5px;
+}
+
+.weapons > table td {
+  border: 1px solid black;
 }
 
 .weapon_table_title {
   font-size: small;
   font-family: Interstate-bold;
-  border-bottom: 1px solid black;
   padding-top: 5px;
 }
 
