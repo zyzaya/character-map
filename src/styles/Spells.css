@@ -1,6 +1,8 @@
 .spells {
   display: grid;
   grid-template-rows: repeat(2, min-content);
+  border: 3px double black;
+  border-radius: 2px 10px;
 }
 
 .spells > .none:nth-child(even) {
@@ -14,6 +16,7 @@
   font-size: medium;
   white-space: nowrap;
   border-bottom: 1px solid black;
+  padding: 5px 0;
 }
 
 .spell_save, .spell_attack {
