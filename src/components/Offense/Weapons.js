@@ -30,15 +30,6 @@ export default function Weapons(props) {
         <WeaponSelect onWeaponSelect={handleWeaponSelect} />
       </div>
       <table className="weapons_table">
-        <thead>
-          <tr>
-            <td>Name</td>
-            <td>To hit</td>
-            <td>damage</td>
-            <td>type</td>
-            <td>properties</td>
-          </tr>
-        </thead>
         <tbody>
           {weapon_list
             .filter((v) => WeaponData.simple_melee[v] !== undefined)

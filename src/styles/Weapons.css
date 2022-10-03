@@ -24,26 +24,11 @@
   border-bottom: 1px solid black;
 }
 
-.weapon {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 3px;
-  padding: 3px 0;
-}
-
-.weapon > div {
-  white-space: nowrap;
-}
-
-.tohit_info {
+.to_hit {
   text-align: center;
 }
 
-.attack_modifier {
-  border-bottom: 1px solid black;
-}
-
-.damage_calculation, .tohit_calculation {
+.damage_calculation, .to_hit_calculation {
   font-size: x-small;
   text-align: center;
 }
