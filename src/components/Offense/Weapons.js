@@ -2,6 +2,7 @@ import React from 'react';
 import Buttons from '../Buttons';
 import Weapon from './Weapon';
 import '../../styles/Weapons.css';
+import WeaponSelect from './WeaponSelect';
 
 export default function Weapons(props) {
   let finesse_name = 'dexterity modifier';
@@ -17,6 +18,7 @@ export default function Weapons(props) {
       <div className="weapons_title">
         <Buttons></Buttons>
         Weapons
+        <WeaponSelect />
       </div>
       <Weapon
         name="Greatsword"
