@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import Buttons from '../Buttons';
 import '../../styles/Weapons.css';
 import WeaponSelect from './WeaponSelect';
+import { Weapons as WeaponData } from '../../info/Weapons';
+import Weapon from './Weapon';
 
 export default function Weapons(props) {
   const [weapon_list, setWeaponList] = useState([]);
@@ -38,13 +40,20 @@ export default function Weapons(props) {
           </tr>
         </thead>
         <tbody>
-          {weapon_list.map((v) => {
-            return (
-              <tr key={v}>
-                <td>{v}</td>
-              </tr>
-            );
-          })}
+          {weapon_list
+            .filter((v) => WeaponData.simple_melee[v] !== undefined)
+            .map((v, i) => {
+              let weapon = WeaponData.simple_melee[v];
+              return (
+                <Weapon
+                  proficiency={props.proficiency}
+                  strength_modifier={props.strength_modifier}
+                  dexterity_modifier={props.dexterity_modifier}
+                  weapon={weapon}
+                  key={i}
+                />
+              );
+            })}
         </tbody>
       </table>
     </div>
