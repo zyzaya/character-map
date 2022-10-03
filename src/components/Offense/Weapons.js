@@ -4,6 +4,10 @@ import '../../styles/Weapons.css';
 import WeaponSelect from './WeaponSelect';
 
 export default function Weapons(props) {
+  function handleWeaponSelect(value) {
+    console.log(value);
+  }
+
   return (
     <div className="weapons">
       <div className="weapons_title">
@@ -12,7 +16,7 @@ export default function Weapons(props) {
       </div>
       <div>
         Add Weapon:
-        <WeaponSelect />
+        <WeaponSelect onWeaponSelect={handleWeaponSelect} />
       </div>
       <table className="weapons_table">
         <thead>

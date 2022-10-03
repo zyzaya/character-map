@@ -2,8 +2,12 @@ import React from 'react';
 import { Weapons } from '../../info/Weapons';
 
 export default function WeaponSelect(props) {
+  function onWeaponChange(e) {
+    props.onWeaponSelect(e.target.value);
+  }
+
   return (
-    <select name="weapon_select" id="weapon_select">
+    <select name="weapon_select" id="weapon_select" onChange={onWeaponChange}>
       <optgroup label="Simple Melee Weapons">
         {Object.keys(Weapons.simple_melee).map((k) => {
           return (
