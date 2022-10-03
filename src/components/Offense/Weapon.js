@@ -25,7 +25,7 @@ export default function Weapon(props) {
   let to_hit = to_hit_modifier + props.proficiency;
 
   return (
-    <tr className="weapon">
+    <tr className="weapon none">
       <td>{props.weapon.name}</td>
       <td>
         <div className="to_hit">{`+${to_hit} to hit`}</div>

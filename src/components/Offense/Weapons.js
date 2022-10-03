@@ -29,12 +29,70 @@ export default function Weapons(props) {
         Add Weapon:
         <WeaponSelect onWeaponSelect={handleWeaponSelect} />
       </div>
-      <table className="weapons_table">
+      <div className="weapon_table_title">Simple Melee Weapons</div>
+      <table className="simple_melee none">
         <tbody>
           {weapon_list
             .filter((v) => WeaponData.simple_melee[v] !== undefined)
             .map((v, i) => {
               let weapon = WeaponData.simple_melee[v];
+              return (
+                <Weapon
+                  proficiency={props.proficiency}
+                  strength_modifier={props.strength_modifier}
+                  dexterity_modifier={props.dexterity_modifier}
+                  weapon={weapon}
+                  key={i}
+                />
+              );
+            })}
+        </tbody>
+      </table>
+      <div className="weapon_table_title">Simple Ranged Weapons</div>
+      <table className="simple_range">
+        <tbody>
+          {weapon_list
+            .filter((v) => WeaponData.simple_ranged[v] !== undefined)
+            .map((v, i) => {
+              let weapon = WeaponData.simple_ranged[v];
+              return (
+                <Weapon
+                  proficiency={props.proficiency}
+                  strength_modifier={props.strength_modifier}
+                  dexterity_modifier={props.dexterity_modifier}
+                  weapon={weapon}
+                  key={i}
+                />
+              );
+            })}
+        </tbody>
+      </table>
+      <div className="weapon_table_title">Martial Melee Weapons</div>
+      <table className="martial_melee">
+        <tbody>
+          {weapon_list
+            .filter((v) => WeaponData.martial_melee[v] !== undefined)
+            .map((v, i) => {
+              let weapon = WeaponData.martial_melee[v];
+              return (
+                <Weapon
+                  proficiency={props.proficiency}
+                  strength_modifier={props.strength_modifier}
+                  dexterity_modifier={props.dexterity_modifier}
+                  weapon={weapon}
+                  key={i}
+                />
+              );
+            })}
+        </tbody>
+      </table>
+      <div className="weapon_table_title">Martial Ranged Weapons</div>
+      <table className="martial_range">
+        <tbody>
+          {weapon_list
+            .filter((v) => WeaponData.martial_range[v] !== undefined)
+            .map((v, i) => {
+              let weapon = WeaponData.martial_range[v];
               return (
                 <Weapon
                   proficiency={props.proficiency}
