@@ -20,7 +20,6 @@ export default function Info(props) {
       .then((val) => {
         try {
           let t = yaml.load(val, 'utf8');
-          console.log(t);
           setData(t);
         } catch (e) {
           console.log(e);
