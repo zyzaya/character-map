@@ -240,6 +240,12 @@ wisdom_save:
     The number consists of your modifier and, if you are proficient, your proficiency bonus.
     Each class gives proficiency in at least two saving throws.
     wisdom_score:
+animal_handling:
+  title: "Animal Handling"
+  info: |
+    As described on page 179 of the Player's Handbook an Animal Handling check is used to calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
 insight:
   title: "Insight"
   info: |
