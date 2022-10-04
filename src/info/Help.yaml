@@ -374,4 +374,11 @@ character_class:
     The character classes are described in chapter 3 (pages 45-120). At the start of the chapter is a table summarizing each of the classes.
 
     Your class determine your Hit Die, your saving throw proficiencies, some of your skill proficiencies, and some of your armor and weapon proficiences.
+level:
+  title: "Level"
+  info: |
+    Described on page 15 of the Player's Handbook your level increases as your character goes on adventures and overcomes challenges.
 
+    When your charater gains a level your class often grants additional features, as detailed in the class descriptions in chapter 3 (pages 45-120).
+    
+    Your number of Hit Dice, your health, and your proficiency bonus increases as your level increases.

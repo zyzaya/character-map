@@ -18,7 +18,7 @@ export default function Level(props) {
 
   return (
     <div className={`level ${visual}`}>
-      <Buttons></Buttons>
+      <Buttons name="level" />
       <label htmlFor="level" className="level_title" onClick={toggleVisual}>
         Level
       </label>
