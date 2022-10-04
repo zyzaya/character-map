@@ -382,3 +382,9 @@ level:
     When your charater gains a level your class often grants additional features, as detailed in the class descriptions in chapter 3 (pages 45-120).
     
     Your number of Hit Dice, your health, and your proficiency bonus increases as your level increases.
+initiative:
+  title: "Initiative"
+  info: |
+    Initiative determines the order of turns during combat, as described on page 189 of the Player's Handbook.
+    
+    When combat starts, every participant makes a Dexterity check to determine their place in the initiative order.

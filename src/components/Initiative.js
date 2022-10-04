@@ -17,7 +17,7 @@ export default function Initiative(props) {
   return (
     <div className={`initiative ${visual}`} onClick={toggleVisual}>
       <div className="initiative_title">
-        <Buttons></Buttons>
+        <Buttons name="initiative" />
         Initiative
       </div>
       <div className="initiative_output">{displayValue}</div>
