@@ -3,7 +3,7 @@ import Buttons from '../Buttons';
 import '../../styles/HitPoints.css';
 import useStatistic from '../../hooks/useStatistic';
 
-export default function HitDice(props) {
+export default function HitPoints(props) {
   const [visual, setVisual] = useStatistic('hit_points');
   const [hitpoints_calc, setHitPointsCalc] = useState('');
 
@@ -29,7 +29,7 @@ export default function HitDice(props) {
   return (
     <div className={`hitpoints ${visual}`} onClick={toggleVisual}>
       <div className="hitpoints_title">
-        <Buttons></Buttons>
+        <Buttons name="hit_points" />
         Hit Point Maximum
       </div>
       <div className="hitpoints_output">{value}</div>

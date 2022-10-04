@@ -14,7 +14,7 @@ export default function HitDice(props) {
   return (
     <div className={`hitdice ${visual}`} onClick={toggleVisual}>
       <div className="hitdice_title">
-        <Buttons></Buttons>
+        <Buttons name="hit_dice" />
         Hit Dice
       </div>
       <div className="hitdice_output">{`${props.level}d${props.size}`}</div>
