@@ -38,12 +38,12 @@ export default function Info(props) {
   }, [body, data, key]);
 
   function handleClose(e) {
-    dispatch(setVisible(false));
+    if (e.target === e.currentTarget) dispatch(setVisible(false));
   }
 
   return (
-    <div className={`info ${visible ? '' : 'hidden'}`}>
-      <div className="info_container">
+    <div className={`info ${visible ? '' : 'hidden'}`} onClick={handleClose}>
+      <div className="info_container" onClick={(e) => e.preventDefault()}>
         <h1 className="info_title">{title}</h1>
         <button className="info_close" onClick={handleClose}>
           Close
