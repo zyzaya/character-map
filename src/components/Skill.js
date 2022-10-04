@@ -24,7 +24,7 @@ export default function Skill(props) {
 
   return (
     <div className={`skill ${visual}`}>
-      <Buttons></Buttons>
+      <Buttons name={props.name}></Buttons>
       <label htmlFor={`${props.name}_skill_input`}>
         <div className="skill_title" onClick={toggleVisual}>
           {displayName}
