@@ -410,3 +410,27 @@ hit_points:
     As described on page 15, each time you gain a level you roll your Hit Die, add your Constitution modifier to the roll, and add the total to your hit point maximum
 
     Alternatively, you can use the fixed value shown in your class entry, which is the average result of the die roll (rounded up).
+armor_class:
+  title: "Armor Class (AC)"
+  info: |
+    Described on page 14 of the Player's Handbook, your Armor Class (AC) represents how well your character avoids being wounded in battle. Things that contribute to your AC include the armor you wear, the shield you carry, and your Dexterity modifier.
+    Your character needs to be proficient with armor and shields to wear and use them effectively.
+armor:
+  title: "Armor"
+  info: |
+    Described on pages 144-145 of the Player's Handbook, the armor you wear determines your Armor Class (AC).
+    The table on page 145 shows how your AC is calculated when wearing different armor.
+
+    Without armor, as described on page 14, is 10 + your Dexterity modifier.
+
+    Light Armor allows you to add your Dexterity modifier
+    
+    Medium Armor allows you to add your Dexterity modifier up to a maximum of +2.
+    
+    Some Heavy Armor have strength requirements. If the characters Strength score is less than the value shown in the table on page 145 the armor reduces the wearer's speed by 10ft.
+
+    The wearer of certain armors have disadvantage on stealth, as shown in the table on page 145.
+shield:
+  title: "Shield"
+  info: |
+    A shield increases your AC by 2, as described on pages 144 and 145 of the Player's Handbook.

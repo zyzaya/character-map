@@ -59,11 +59,11 @@ export default function ArmorClass(props) {
   return (
     <div className={`armor_class ${visual}`}>
       <div className="armor_title" onClick={toggleVisual}>
-        <Buttons></Buttons>
+        <Buttons name="armor_class" />
         Armor Class
       </div>
       <div className="equipped_armor">
-        <Buttons></Buttons>
+        <Buttons name="armor" />
         <select name="armor" onChange={onArmorChange}>
           <option value="none">{Armors.none.name}</option>
           <optgroup label="Light Armor">
@@ -101,7 +101,7 @@ export default function ArmorClass(props) {
         </select>
       </div>
       <div className="shield">
-        <Buttons></Buttons>
+        <Buttons name="shield" />
         <label htmlFor="shield_input" onClick={toggleVisual}>
           Shield (+2 AC)
         </label>
