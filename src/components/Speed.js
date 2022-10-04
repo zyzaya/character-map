@@ -14,7 +14,7 @@ export default function Speed(props) {
   return (
     <div className={`speed ${visual}`} onClick={toggleVisual}>
       <div className="speed_title">
-        <Buttons></Buttons>
+        <Buttons name="speed" />
         Speed
       </div>
       <div className="speed_output">{`${props.value}ft`}</div>
