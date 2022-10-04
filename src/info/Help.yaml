@@ -366,3 +366,12 @@ skills:
   title: "Skills"
   info: |
     Skills are described on page 174 of the Player's Handbook as well as in more detail through Chapter 7 (pages 173-180). They represent a specific aspect of an ability score, and in individual's proficiency in a skill demonstrates a focus on that aspect.
+character_class:
+  title: "Class"
+  info: |
+    As described on page 11 of the Player's Handbook your Class broadly describes a character's vocation, what talents they possess, and the tactics they are most like to employ when exploring a dungeon, fighting monsters, or engaging in a tense nogotiation. 
+    
+    The character classes are described in chapter 3 (pages 45-120). At the start of the chapter is a table summarizing each of the classes.
+
+    Your class determine your Hit Die, your saving throw proficiencies, some of your skill proficiencies, and some of your armor and weapon proficiences.
+

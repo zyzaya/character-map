@@ -14,7 +14,7 @@ export default function Class(props) {
 
   return (
     <div className={`class ${visual}`}>
-      <Buttons></Buttons>
+      <Buttons name="character_class" />
       <label htmlFor="class" className="class_title" onClick={toggleVisual}>
         Class
       </label>
