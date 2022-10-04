@@ -240,6 +240,30 @@ wisdom_save:
     The number consists of your modifier and, if you are proficient, your proficiency bonus.
     Each class gives proficiency in at least two saving throws.
     wisdom_score:
+insight:
+  title: "Insight"
+  info: |
+    As described on page 178 of the Player's Handbook an Insight check decides whther you can determine the true intentions of a creature, such as when searching out a lie or predicting someone's next move.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+medicine:
+  title: "Medicine"
+  info: |
+    As described on page 178 of the Player's Handbook a Medicine check lets your try to stabilize a dying companion or diagnose an illness.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+perception:
+  title: "Perception"
+  info: |
+    As described on page 178 of the Player's Handbook a Perception check lets you spot, hear, or otherwise detect the presence of something.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+survival:
+  title: "Survival"
+  info: |
+    As described on page 178 of the Player's Handbook a Survival check is used to follow tracks, hunt wild game, guide your group through fozen waselands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
 charisma_score:
   title: "Charisma (CHA) Ability Score"
   info: |
