@@ -301,3 +301,27 @@ charisma_save:
 
     The number consists of your modifier and, if you are proficient, your proficiency bonus.
     Each class gives proficiency in at least two saving throws.
+deception:
+  title: "Deception"
+  info: |
+    As described on page 179 of the Player's Handbook a Deception check determines whether you can convincingly hide the truth, either verbally through your actions.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
+intimidation:
+  title: "Intimidation"
+  info: |
+    As described on page 179 of the Player's Handbook an Intimidation check is used when you attempt to influence someone through overt threats, hostile actions, and physical violence.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
+performance:
+  title: "Performance"
+  info: |
+    As described on page 179 of the Player's Handbook a Performance check determines how well you can delight an audience with music, dance, acting, storytelling, or some other form of entertainment.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
+persuasion:
+  title: "Persuasion"
+  info: |
+    As described on page 179 of the Player's Handbook a Persuasion check is used when you attempt to influence someone or a group of people with tact, social graces, or good nature.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
