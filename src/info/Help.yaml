@@ -40,7 +40,9 @@ strength_save:
 athletics:
   title: "Athletics"
   info: |
-    athletics information
+    As described on page 175 of the Player's Handbook an Athletics check covers difficult situations you encounter while climbing, jumping, or swimming.
+
+    The number consists of your strength modifier and, if you are proficient, your proficiency.
 dexterity_score:
   title: "Dexterity (DEX) Ability Score"
   info: |
@@ -81,15 +83,21 @@ dexterity_save:
 acrobatics:
   title: "Acrobatics"
   info: |
-    acrobatics information
+    As described on page 176 of the Player's Handbook an Acrobatics check covers your attempt to stay on your feet in a tricky situation, such as when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ships deck.
+
+    The number consists of your dexterity modifier and, if you are proficient, your proficiency.
 sleight_of_hand:
   title: "Sleight of Hand"
   info: |
-    sleight of hand information
+    As described on page 176 of the Player's Handbook a Sleight of Hand check is used whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone ele or conealing an object on your person.
+
+    The number consists of your dexterity modifier and, if you are proficient, your proficiency.
 stealth: 
   title: "Stealth"
   info: |
-    stealth information
+    As described on page 176 of the Player's Handbook a Sleight of Hand check is used when you attempt to conceal yourself from enemies, slick past guards, slip away without being noticed, or sneak up on someone without being seen or heard.
+
+    The number consists of your dexterity modifier and, if you are proficient, your proficiency.
 constitution_score:
   title: "Constitution (CON) Ability Score"
   info: |
