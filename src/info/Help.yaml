@@ -331,3 +331,25 @@ persuasion:
     As described on page 179 of the Player's Handbook a Persuasion check is used when you attempt to influence someone or a group of people with tact, social graces, or good nature.
 
     The number consists of your charisma modifier and, if you are proficient, your proficiency.
+ability_scores:
+  title: "Ability Scores"
+  info: |
+   Ability Scores are described in Chapter 7 (pages 173-180) of the Player's Handbook. They are a number from 1 to 30 that is not just a measure of innate capabilities, but also encompasses a creature's training and competence in activities related to that ability.
+
+   Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.

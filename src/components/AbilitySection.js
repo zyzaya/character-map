@@ -7,7 +7,7 @@ export default function AbilitySection(props) {
   return (
     <div className="ability_section">
       <div className="ability_section_title">
-        <Buttons></Buttons>
+        <Buttons name="ability_scores" />
         Ability Scores
       </div>
 
