@@ -331,6 +331,15 @@ persuasion:
     As described on page 179 of the Player's Handbook a Persuasion check is used when you attempt to influence someone or a group of people with tact, social graces, or good nature.
 
     The number consists of your charisma modifier and, if you are proficient, your proficiency.
+proficiency:
+  title: "Proficiency Bonus"
+  info: |
+    As described on page 7 of the Player's Handbook your proficiency bonus is sometimes added to a D20 to reflect a character's particular skill.
+
+    It is described in more detail on page 12 and pages 173-174 and applies to many of the numbers on your character sheet.
+    The bonus is used in the rules on ability checks, saving throws, and attack rolls. It is determined by level, as shown in the table on page 15 and again in the table at the start of each Class's section.
+    
+    Your class determines weapon proficiencies, your saving throw proficiencies, and some of your skill and tool proficiencies. Your background gives you additional skill and tool proficiencies, and some races give you more proficiencies.
 ability_scores:
   title: "Ability Scores"
   info: |
