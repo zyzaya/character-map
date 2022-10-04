@@ -353,3 +353,7 @@ ability_scores:
     Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
     The Fighter class gets additional Ability Score Improvements at levels 6
     and 14, as indicated in the table on page 71 of the Player's Handbook.
+skills:
+  title: "Skills"
+  info: |
+    Skills are described on page 174 of the Player's Handbook as well as in more detail through Chapter 7 (pages 173-180). They represent a specific aspect of an ability score, and in individual's proficiency in a skill demonstrates a focus on that aspect.

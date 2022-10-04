@@ -12,7 +12,7 @@ export default function SkillSection(props) {
   return (
     <div className="skills_section">
       <div className="skill_section_title">
-        <Buttons></Buttons>
+        <Buttons name="skills" />
         Skills
       </div>
 
