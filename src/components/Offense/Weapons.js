@@ -27,7 +27,7 @@ export default function Weapons(props) {
     <div className="weapons">
       <div className="weapons_header">
         <div className="weapons_title">
-          <Buttons></Buttons>
+          <Buttons name="weapons" />
           Weapons
         </div>
         <div className="add_weapons">

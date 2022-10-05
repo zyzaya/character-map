@@ -434,3 +434,18 @@ shield:
   title: "Shield"
   info: |
     A shield increases your AC by 2, as described on pages 144 and 145 of the Player's Handbook.
+weapons:
+  title: "Weapons"
+  info: |
+    Weapons are briefly explaind on page 14 of the Player's Handbook, the different weapons are shown on pages 146-149, and how to make an attack with one is explained on page 195.
+
+    To make an attack, roll a d20 add your modifier and your proficiency bonus if you are proficient with the weapon.
+    
+    Damage rolls are explained on page 196. The damage dice are defined in the table on page 149.
+
+    When attacking with a weapon, roll the damage dice and add the modifier to the damage.
+
+    For melee weapons, use your Strength modifier for attack and damage rolls.
+    For ranged weapon, use your Dexterity modifier for attack and damage rolls.
+
+    Most weapons, as shown in the table on page 149, have additional properties that modify how they function. The properties are explained on pages 146-148.
