@@ -13,7 +13,7 @@ export default function SpellAttack(props) {
   return (
     <div className={`spell_attack ${visual}`} onClick={toggleVisual}>
       <div className="spell_attack_title">
-        <Buttons></Buttons>
+        <Buttons name="spell_attack" />
         Spell Attack Bonus
       </div>
       <div className="spell_attack_output">

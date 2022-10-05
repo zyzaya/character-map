@@ -13,7 +13,7 @@ export default function SpellSave(props) {
   return (
     <div className={`spell_save ${visual}`} onClick={toggleVisual}>
       <div className="spell_save_title">
-        <Buttons></Buttons>
+        <Buttons name="spell_save" />
         {`${props.character_class === 'monk' ? 'Ki' : 'Spell'}`} Save DC
       </div>
       <div className="spell_save_output">

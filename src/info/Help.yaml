@@ -449,3 +449,17 @@ weapons:
     For ranged weapon, use your Dexterity modifier for attack and damage rolls.
 
     Most weapons, as shown in the table on page 149, have additional properties that modify how they function. The properties are explained on pages 146-148.
+spell_attack:
+  title: "Spell Attack"
+  info: |
+    The number you use for a spell attack is explained on page 194 and again on page 205 of the Player's Handbook.
+
+    It is your spellcasting ability modifier + your proficiency bonus. Which modifier you use depends on your Class, as defined in the Spellcasting Ability section of each class that can cast spells.
+spell_save:
+  title: "Spell Save DC"
+  info: |
+    Explained on page 205 of the Player's Handbook, some spells specify that a target can make a saving throw to avoid some or all of a spell's effect.
+
+    The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus.
+
+    Which modifier you use depends on your Class, as defined in the Spellcasting Ability section of each class that can cast spells.
