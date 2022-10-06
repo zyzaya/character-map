@@ -22,7 +22,7 @@ export let Statistics = {
   armor_class: {
     visual: 'none',
     sources: ['dexterity_modifier'],
-    affecting: [],
+    affecting: ['speed'],
   },
   initiative: {
     visual: 'none',
@@ -31,7 +31,7 @@ export let Statistics = {
   },
   speed: {
     visual: 'none',
-    sources: ['race'],
+    sources: ['race', 'armor_class'],
     affecting: [],
   },
   spell_save: {
