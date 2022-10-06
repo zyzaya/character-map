@@ -50,6 +50,7 @@ export default function ArmorClass(props) {
 
   function onArmorChange(e) {
     setArmor(e.target.value);
+    props.onArmorChange(e.target.value);
   }
 
   function onShieldChange(e) {
@@ -86,13 +87,8 @@ export default function ArmorClass(props) {
           </optgroup>
           <optgroup label="Heavy Armor">
             {Object.keys(Armors.heavy).map((k) => {
-              let min_str = Armors.heavy[k].strength_min;
               return (
-                <option
-                  value={k}
-                  key={k}
-                  disabled={min_str !== undefined && props.strength < min_str}
-                >
+                <option value={k} key={k}>
                   {Armors.heavy[k].name}
                 </option>
               );

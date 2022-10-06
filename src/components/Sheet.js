@@ -91,6 +91,7 @@ export default function Sheet(props) {
           <ArmorInitiativeSpeed
             strength={strength}
             dexterity_modifier={modifier(dexterity)}
+            strength_modifier={modifier(strength)}
             speed={30}
           ></ArmorInitiativeSpeed>
           <Health
