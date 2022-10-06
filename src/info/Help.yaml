@@ -393,6 +393,8 @@ speed:
   info: |
     Your speed, determined by your race, is how far you can move when traveling and fighting.
     It is described on page 17 of the Player's Handbook.
+
+    Wearing heavy armor you don't meet the strength requirement for reduces your speed by 10ft.
 hit_dice:
   title: "Hit Dice"
   info: |
