@@ -10,6 +10,7 @@ export default function WeaponProperty(props) {
     let name = props.name;
     if (name.includes('ammunition')) name = 'ammunition';
     else if (name.includes('versatile')) name = 'versatile';
+    else if (name.includes('thrown')) name = 'thrown';
 
     dispatch(setValue(name));
     dispatch(setVisible(true));

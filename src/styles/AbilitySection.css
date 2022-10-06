@@ -5,6 +5,7 @@
 
 .ability_section_title {
   font-family: Interstate-bold;
+  white-space: nowrap;
   font-size: medium;
   display: grid;
   grid-template-columns: min-content 1fr;
