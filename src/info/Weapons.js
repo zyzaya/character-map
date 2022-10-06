@@ -149,7 +149,7 @@ export let Weapons = {
       melee: true,
       damage: '1d12',
       damage_type: 'piercing',
-      properties: ['reach, special'],
+      properties: ['reach', 'special'],
     },
     longsword: {
       name: 'Longsword',
