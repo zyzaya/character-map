@@ -41,7 +41,6 @@ export default function Weapon(props) {
     e.preventDefault();
     setVisual(visual === 'focused' ? 'none' : 'focused');
   }
-  console.log(props.weapon.properties);
 
   return (
     <tr className={`weapon ${visual}`}>
