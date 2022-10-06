@@ -7,7 +7,11 @@ export default function WeaponProperty(props) {
   const dispatch = useDispatch();
 
   function handleClick(e) {
-    dispatch(setValue(props.name));
+    let name = props.name;
+    if (name.includes('ammunition')) name = 'ammunition';
+    else if (name.includes('versatile')) name = 'versatile';
+
+    dispatch(setValue(name));
     dispatch(setVisible(true));
   }
 
