@@ -62,7 +62,7 @@ export default function Weapon(props) {
           {props.weapon.damage_type}
         </div>
       </td>
-      <td onClick={toggleVisual}>
+      <td>
         {props.weapon.properties.map((p, i) => {
           return (
             <WeaponProperty
