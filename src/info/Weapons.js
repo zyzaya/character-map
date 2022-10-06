@@ -135,7 +135,7 @@ export let Weapons = {
       melee: true,
       damage: '2d6',
       damage_type: 'slashing',
-      properties: ['heavy, two-handed'],
+      properties: ['heavy', 'two-handed'],
     },
     halberd: {
       name: 'Halberd',

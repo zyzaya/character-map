@@ -1,5 +1,6 @@
 import React from 'react';
 import useStatistic from '../../hooks/useStatistic';
+import WeaponProperty from './WeaponProperty';
 
 export default function Weapon(props) {
   let to_hit_modifier;
@@ -40,6 +41,7 @@ export default function Weapon(props) {
     e.preventDefault();
     setVisual(visual === 'focused' ? 'none' : 'focused');
   }
+  console.log(props.weapon.properties);
 
   return (
     <tr className={`weapon ${visual}`}>
@@ -60,7 +62,17 @@ export default function Weapon(props) {
           {props.weapon.damage_type}
         </div>
       </td>
-      <td onClick={toggleVisual}>{props.weapon.properties.join(', ')}</td>
+      <td onClick={toggleVisual}>
+        {props.weapon.properties.map((p, i) => {
+          return (
+            <WeaponProperty
+              name={p}
+              key={i}
+              last={i === props.weapon.properties.length - 1}
+            />
+          );
+        })}
+      </td>
     </tr>
   );
 }
