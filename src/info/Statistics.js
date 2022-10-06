@@ -194,6 +194,8 @@ export let Statistics = {
       'investigation',
       'nature',
       'religion',
+      'spell_attack',
+      'spell_save',
     ],
   },
   intelligence_save: {
@@ -241,6 +243,8 @@ export let Statistics = {
       'medicine',
       'perception',
       'survival',
+      'spell_attack',
+      'spell_save',
     ],
   },
   wisdom_save: {
@@ -287,6 +291,8 @@ export let Statistics = {
       'intimidation',
       'performance',
       'persuasion',
+      'spell_attack',
+      'spell_save',
     ],
   },
   charisma_save: {
