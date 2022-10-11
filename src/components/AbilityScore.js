@@ -6,7 +6,6 @@ import useWindowDimensions from '../hooks/useWindowDimensions';
 export default function AbilityScore(props) {
   const [visual, setVisual] = useStatistic(`${props.name}_score`);
   const windowDimensions = useWindowDimensions();
-  console.log(windowDimensions);
 
   function toggleVisual(e) {
     e.preventDefault();
