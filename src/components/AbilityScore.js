@@ -1,9 +1,12 @@
 import React from 'react';
 import Buttons from './Buttons';
 import useStatistic from '../hooks/useStatistic';
+import useWindowDimensions from '../hooks/useWindowDimensions';
 
 export default function AbilityScore(props) {
   const [visual, setVisual] = useStatistic(`${props.name}_score`);
+  const windowDimensions = useWindowDimensions();
+  console.log(windowDimensions);
 
   function toggleVisual(e) {
     e.preventDefault();
@@ -17,7 +20,7 @@ export default function AbilityScore(props) {
 
   let short = props.name.substring(0, 3).toUpperCase();
   let displayName = props.name[0].toUpperCase() + props.name.substring(1);
-  displayName += ` (${short})`;
+  if (windowDimensions.width > 870) displayName += ` (${short})`;
 
   return (
     <div className={`score ${visual}`}>
