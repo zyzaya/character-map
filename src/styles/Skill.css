@@ -9,3 +9,7 @@
   display: grid;
   grid-template-columns: 1fr min-content min-content;
 }
+
+.skill_value {
+  margin-right: 7px;
+}

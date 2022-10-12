@@ -3,14 +3,7 @@
   src: url(./fonts/Interstate-light.ttf);
 }
 
-.body {
-  width: 100vw;
-  height: 100vh;
-}
-
 .App {
-  width: 100vw;
-  height: 100vh;
   padding: 10px;
   margin: 0;
   padding: 0;

@@ -6,6 +6,7 @@
 .armor_class {
   display: grid;
   grid-template-rows: repeat(4, min-content) 1fr min-content;
+  grid-template-columns: min-content;
   row-gap: 5px;
   align-items: center;
   border: 3px double black;
