@@ -51,8 +51,10 @@
 }
 
 .misc_stats {
-  justify-self: center;
+  justify-self: stretch;
+  align-self: stretch;
   display: grid;
+  justify-content: center;
   grid-template-rows: repeat(2, min-content);
   grid-template-columns: min-content;
   row-gap: 5px;
