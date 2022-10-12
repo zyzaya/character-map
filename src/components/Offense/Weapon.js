@@ -1,8 +1,10 @@
 import React from 'react';
 import useStatistic from '../../hooks/useStatistic';
+import useWindowDimensions from '../../hooks/useWindowDimensions';
 import WeaponProperty from './WeaponProperty';
 
 export default function Weapon(props) {
+  const windowDimensions = useWindowDimensions();
   let to_hit_modifier;
   let damage;
   let modifier;
@@ -52,12 +54,18 @@ export default function Weapon(props) {
       <td onClick={toggleVisual}>{props.weapon.name}</td>
       <td onClick={toggleVisual}>
         <div className="to_hit">{`+${to_hit} to hit`}</div>
-        <div className="to_hit_calculation">{`${props.proficiency} (proficiency) + ${to_hit_modifier} (${modifier} modifier)`}</div>
+        {windowDimensions.width > 450 && (
+          <div className="to_hit_calculation">{`${props.proficiency} (proficiency) + ${to_hit_modifier} (${modifier} modifier)`}</div>
+        )}
       </td>
       <td onClick={toggleVisual}>
         <div className="damage">
           {`${props.weapon.damage} + ${damage}`}
-          <span className="damage_calculation">{` (${modifier} modifier) `}</span>
+          {windowDimensions.width > 450 ? (
+            <span className="damage_calculation">{` (${modifier} modifier) `}</span>
+          ) : (
+            ' '
+          )}
           {props.weapon.damage_type}
         </div>
       </td>
