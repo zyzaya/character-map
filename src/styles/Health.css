@@ -1,7 +1,12 @@
+@media (max-width: 450px) {
+  .health {
+    flex-direction: column;
+  }
+}
+
 .health {
-  display: grid;
-  grid-template-columns: repeat(2, min-content);
-  column-gap: 8px;
+  display: flex;
+  gap: 8px;
   width: min-content;
   margin: auto;
 }
