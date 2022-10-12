@@ -1,0 +1,541 @@
+# what it means
+# where it comes from in books
+strength_score:
+  title: "Strength (STR) Ability Score"
+  info: |
+    Page 175 of the Player's Handbook outlines that your Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races mountain dwarf, half-Orc, dragonborn, and human allow for increases in strength.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+strength_modifier:
+  title: "Strength (STR) Modifier"
+  info: |
+    Page 175 of the Player's Handbook outlines that your Strength measures bodily power, athletic training, and the extent to which you can exert raw physical force.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+strength_save:
+  title: "Strength (STR) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
+athletics:
+  title: "Athletics"
+  info: |
+    As described on page 175 of the Player's Handbook an Athletics check covers difficult situations you encounter while climbing, jumping, or swimming.
+
+    The number consists of your strength modifier and, if you are proficient, your proficiency.
+dexterity_score:
+  title: "Dexterity (DEX) Ability Score"
+  info: |
+    Page 176 of the Player's Handbook outlines that your Dexterity measures any attempt to move nimbly, quickly, quietly, or to keep from falling on tricky footing.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races elf, forest gnome, halfing, and human allow for increases in dexterity.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+dexterity_modifier:
+  title: "Dexterity (DEX) Modifier"
+  info: |
+    Page 176 of the Player's Handbook outlines that your Dexterity measures any attempt to move nimbly, quickly, quietly, or to keep from falling on tricky footing.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+dexterity_save:
+  title: "Dexterity (DEX) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
+acrobatics:
+  title: "Acrobatics"
+  info: |
+    As described on page 176 of the Player's Handbook an Acrobatics check covers your attempt to stay on your feet in a tricky situation, such as when you're trying to run across a sheet of ice, balance on a tightrope, or stay upright on a rocking ships deck.
+
+    The number consists of your dexterity modifier and, if you are proficient, your proficiency.
+sleight_of_hand:
+  title: "Sleight of Hand"
+  info: |
+    As described on page 177 of the Player's Handbook a Sleight of Hand check is used whenever you attempt an act of legerdemain or manual trickery, such as planting something on someone ele or conealing an object on your person.
+
+    The number consists of your dexterity modifier and, if you are proficient, your proficiency.
+stealth: 
+  title: "Stealth"
+  info: |
+    As described on page 177 of the Player's Handbook a Sleight of Hand check is used when you attempt to conceal yourself from enemies, slick past guards, slip away without being noticed, or sneak up on someone without being seen or heard.
+
+    The number consists of your dexterity modifier and, if you are proficient, your proficiency.
+constitution_score:
+  title: "Constitution (CON) Ability Score"
+  info: |
+    Page 176 of the Player's Handbook outlines that your Constitution measures health, stamina, and vital force.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races dwarf, half-orc, stout halfling, human, and rock gnome allow for increases in constitution.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+constitution_modifier:
+  title: "Constitution (CON) Modifier"
+  info: |
+    Page 176 of the Player's Handbook outlines that your Constitution measures health, stamina, and vital force.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+constitution_save:
+  title: "Constitution (CON) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
+intelligence_score:
+  title: "Intelligence (INT) Ability Score"
+  info: |
+    Page 177 of the Player's Handbook describes that your Intelligence measures mental acuity, accuracy of recall, and the ability to reason.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races high elf, tiefling, gnome, and human allow for increases to intelligence.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+intelligence_modifier:
+  title: "Intelligence (INT) Modifier"
+  info: |
+    Page 177 of the Player's Handbook describes that your Intelligence measures mental acuity, accuracy of recall, and the ability to reason.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+intelligence_save:
+  title: "Intelligence (INT) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
+arcana:
+  title: "Arcana"
+  info: |
+    As described on page 177 of the Player's Handbook an Arcana check measures your ability to recall lore about spells, magic items, eldritch symbols, magical traditions, the planes of existence, and the inhabitants of those planes.
+
+    The number consists of your intelligence modifier and, if you are proficient, your proficiency.
+history:
+  title: "History"
+  info: |
+    As described on pages 177-178 of the Player's Handbook a History check measures your ability to recall lore about historical events, legendary people, ancienct kingdoms, past disputes, recent wars, and lost civilizations.
+
+    The number consists of your intelligence modifier and, if you are proficient, your proficiency.
+investigation:
+  title: "Investigation"
+  info: |
+    As described on page 178 of the Player's Handbook an Investigation check is used when you look around for clues and make deductions based on those clues.
+
+    The number consists of your intelligence modifier and, if you are proficient, your proficiency.
+nature:
+  title: "Nature"
+  info: |
+    As described on page 178 of the Player's Handbook a Nature check measures your ability to recall lore about terrain, plants and animals, the weather, and natural cycles.
+
+    The number consists of your intelligence modifier and, if you are proficient, your proficiency.
+religion:
+  title: "Religion"
+  info: |
+    As described on page 178 of the Player's Handbook a Religion check measures your ability to recall lore about dieties, rites and prayers, religious hierarchies, holy symbols, and the practices of secret cults.
+
+    The number consists of your intelligence modifier and, if you are proficient, your proficiency.
+wisdom_score:
+  title: "Wisdom (WIS) Ability Score"
+  info: |
+    Page 178 of the Player's Handbook describes that your Wisdom reflects how attuned you are to the world around you as well as representing perceptiveness and intuition.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races hill dwarf, human, and wood elf allow for increases in wisdom.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+wisdom_modifier:
+  title: "Wisdom (WIS) Modifier"
+  info: |
+    Page 178 of the Player's Handbook describes that your Wisdom reflects how attuned you are to the world around you as well as representing perceptiveness and intuition.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+wisdom_save:
+  title: "Wisdom (WIS) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
+    wisdom_score:
+animal_handling:
+  title: "Animal Handling"
+  info: |
+    As described on page 179 of the Player's Handbook an Animal Handling check is used to calm down a domesticated animal, keep a mount from getting spooked, or intuit an animal's intentions.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+insight:
+  title: "Insight"
+  info: |
+    As described on page 178 of the Player's Handbook an Insight check decides whther you can determine the true intentions of a creature, such as when searching out a lie or predicting someone's next move.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+medicine:
+  title: "Medicine"
+  info: |
+    As described on page 178 of the Player's Handbook a Medicine check lets your try to stabilize a dying companion or diagnose an illness.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+perception:
+  title: "Perception"
+  info: |
+    As described on page 178 of the Player's Handbook a Perception check lets you spot, hear, or otherwise detect the presence of something.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+survival:
+  title: "Survival"
+  info: |
+    As described on page 178 of the Player's Handbook a Survival check is used to follow tracks, hunt wild game, guide your group through fozen waselands, identify signs that owlbears live nearby, predict the weather, or avoid quicksand and other natural hazards.
+
+    The number consists of your wisdom modifier and, if you are proficient, your proficiency.
+charisma_score:
+  title: "Charisma (CHA) Ability Score"
+  info: |
+    Page 178 of the Player's Handbook describes that your Charisma measures your ability to interact effective with others. It includes such factors as confidence and eloquence, and it can represent a charming or commanding personality.
+
+    Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+    The races half-elf, dragonborn, drow, human, lightfoot halfling, and tiefling allow for increases in wisdom.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+charisma_modifier:
+  title: "Charisma (CHA) Modifier"
+  info: |
+    Page 178 of the Player's Handbook describes that your Charisma measures your ability to interact effective with others. It includes such factors as confidence and eloquence, and it can represent a charming or commanding personality.
+
+    Your modifier is derived from your score, using the table found on page 13 of the Player's Handbook and again on page 173.
+    To determine you score without consulting the table, subtract 10 from the ability score and then divide the result by 2 (round down).
+charisma_save:
+  title: "Charisma (CHA) Saving Throw"
+  info: |
+    As described on page 179 of the Player's Handbook a Saving Throw represents an attempt to resist a spell, a trap, a poison, a disease, or a similar threat.
+
+    The number consists of your modifier and, if you are proficient, your proficiency bonus.
+    Each class gives proficiency in at least two saving throws.
+deception:
+  title: "Deception"
+  info: |
+    As described on page 179 of the Player's Handbook a Deception check determines whether you can convincingly hide the truth, either verbally through your actions.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
+intimidation:
+  title: "Intimidation"
+  info: |
+    As described on page 179 of the Player's Handbook an Intimidation check is used when you attempt to influence someone through overt threats, hostile actions, and physical violence.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
+performance:
+  title: "Performance"
+  info: |
+    As described on page 179 of the Player's Handbook a Performance check determines how well you can delight an audience with music, dance, acting, storytelling, or some other form of entertainment.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
+persuasion:
+  title: "Persuasion"
+  info: |
+    As described on page 179 of the Player's Handbook a Persuasion check is used when you attempt to influence someone or a group of people with tact, social graces, or good nature.
+
+    The number consists of your charisma modifier and, if you are proficient, your proficiency.
+proficiency:
+  title: "Proficiency Bonus"
+  info: |
+    As described on page 7 of the Player's Handbook your proficiency bonus is sometimes added to a D20 to reflect a character's particular skill.
+
+    It is described in more detail on page 12 and pages 173-174 and applies to many of the numbers on your character sheet.
+    The bonus is used in the rules on ability checks, saving throws, and attack rolls. It is determined by level, as shown in the table on page 15 and again in the table at the start of each Class's section.
+    
+    Your class determines weapon proficiencies, your saving throw proficiencies, and some of your skill and tool proficiencies. Your background gives you additional skill and tool proficiencies, and some races give you more proficiencies.
+ability_scores:
+  title: "Ability Scores"
+  info: |
+   Ability Scores are described in Chapter 7 (pages 173-180) of the Player's Handbook. They are a number from 1 to 30 that is not just a measure of innate capabilities, but also encompasses a creature's training and competence in activities related to that ability.
+
+   Your ability score comes from a combination of character creation, your race, Ability Score Improvements, and Feats.
+
+    Character Creation is described on pages 12-13 of the Player's Handbook.
+
+    Races are described on pages 17-43 of the Player's Handbook. On page 12 there is a summary table of what races increase what abililty scores on page 12.
+
+    Ability Score Improvements are described in the sections outlining classes
+    on pages 45-119 of the Player's Handbook. They allow you to increase one
+    ability score by 2, or two ability scores by 1.
+
+    As described on page 165 of the Player's Handbook, a Feat can replace
+    an Ability Score Improvement, some of which increase Ability Scores. 
+
+    The table in the first section of each class description indicates when 
+    Ability Score Improvements are gained. This is levels 4, 8, 12, 16, and 19. 
+    The Fighter class gets additional Ability Score Improvements at levels 6
+    and 14, as indicated in the table on page 71 of the Player's Handbook.
+skills:
+  title: "Skills"
+  info: |
+    Skills are described on page 174 of the Player's Handbook as well as in more detail through Chapter 7 (pages 173-180). They represent a specific aspect of an ability score, and in individual's proficiency in a skill demonstrates a focus on that aspect.
+character_class:
+  title: "Class"
+  info: |
+    As described on page 11 of the Player's Handbook your Class broadly describes a character's vocation, what talents they possess, and the tactics they are most like to employ when exploring a dungeon, fighting monsters, or engaging in a tense nogotiation. 
+    
+    The character classes are described in chapter 3 (pages 45-120). At the start of the chapter is a table summarizing each of the classes.
+
+    Your class determine your Hit Die, your saving throw proficiencies, some of your skill proficiencies, and some of your armor and weapon proficiences.
+level:
+  title: "Level"
+  info: |
+    Described on page 15 of the Player's Handbook your level increases as your character goes on adventures and overcomes challenges.
+
+    When your charater gains a level your class often grants additional features, as detailed in the class descriptions in chapter 3 (pages 45-120).
+    
+    Your number of Hit Dice, your health, and your proficiency bonus increases as your level increases.
+initiative:
+  title: "Initiative"
+  info: |
+    Initiative determines the order of turns during combat, as described on page 189 of the Player's Handbook.
+    
+    When combat starts, every participant makes a Dexterity check to determine their place in the initiative order.
+speed:
+  title: "Speed"
+  info: |
+    Your speed, determined by your race, is how far you can move when traveling and fighting.
+    It is described on page 17 of the Player's Handbook.
+
+    Wearing heavy armor you don't meet the strength requirement for reduces your speed by 10ft.
+hit_dice:
+  title: "Hit Dice"
+  info: |
+    As described on page 12 of the Player's Handbook your Hit Dice determine your Hit Points. Your Hit Points define how tough your character is in combat and other dangerous situations.
+    At 1st level, your character has 1 Hit Die, and the die type is determined by your class, as shown in the table on page 45 and again in the Class Features section of each class description in Chapter 3 (pages 45-120)
+
+    Each time you gain a level, you gain 1 additional Hit Die, as described on page 15.
+hit_points:
+  title: "Hit Point Maximum"
+  info: |
+    As described on page 12 of the Player's Handbook your Hit Dice determine your Hit Points. Your Hit Points define how tough your character is in combat and other dangerous situations.
+    At 1st level you start with Hit Points equal to the highest roll of your Hit Die plus your Constitution modifier.
+    Your hit die type is determined by your class, as shown in the table on page 45 and again in the Class Features section of each class description in Chapter 3 (pages 45-120)
+
+    As described on page 15, each time you gain a level you roll your Hit Die, add your Constitution modifier to the roll, and add the total to your hit point maximum
+
+    Alternatively, you can use the fixed value shown in your class entry, which is the average result of the die roll (rounded up).
+armor_class:
+  title: "Armor Class (AC)"
+  info: |
+    Described on page 14 of the Player's Handbook, your Armor Class (AC) represents how well your character avoids being wounded in battle. Things that contribute to your AC include the armor you wear, the shield you carry, and your Dexterity modifier.
+    Your character needs to be proficient with armor and shields to wear and use them effectively.
+armor:
+  title: "Armor"
+  info: |
+    Described on pages 144-145 of the Player's Handbook, the armor you wear determines your Armor Class (AC).
+    The table on page 145 shows how your AC is calculated when wearing different armor.
+
+    Without armor, as described on page 14, is 10 + your Dexterity modifier.
+
+    Light Armor allows you to add your Dexterity modifier
+    
+    Medium Armor allows you to add your Dexterity modifier up to a maximum of +2.
+    
+    Some Heavy Armor have strength requirements. If the characters Strength score is less than the value shown in the table on page 145 the armor reduces the wearer's speed by 10ft.
+
+    The wearer of certain armors have disadvantage on stealth, as shown in the table on page 145.
+shield:
+  title: "Shield"
+  info: |
+    A shield increases your AC by 2, as described on pages 144 and 145 of the Player's Handbook.
+weapons:
+  title: "Weapons"
+  info: |
+    Weapons are briefly explaind on page 14 of the Player's Handbook, the different weapons are shown on pages 146-149, and how to make an attack with one is explained on page 195.
+
+    To make an attack, roll a d20 add your modifier and your proficiency bonus if you are proficient with the weapon.
+    
+    Damage rolls are explained on page 196. The damage dice are defined in the table on page 149.
+
+    When attacking with a weapon, roll the damage dice and add the modifier to the damage.
+
+    For melee weapons, use your Strength modifier for attack and damage rolls.
+    For ranged weapon, use your Dexterity modifier for attack and damage rolls.
+
+    Most weapons, as shown in the table on page 149, have additional properties that modify how they function. The properties are explained on pages 146-148.
+spell_attack:
+  title: "Spell Attack"
+  info: |
+    The number you use for a spell attack is explained on page 194 and again on page 205 of the Player's Handbook.
+
+    It is your spellcasting ability modifier + your proficiency bonus. Which modifier you use depends on your Class, as defined in the Spellcasting Ability section of each class that can cast spells.
+spell_save:
+  title: "Spell Save DC"
+  info: |
+    Explained on page 205 of the Player's Handbook, some spells specify that a target can make a saving throw to avoid some or all of a spell's effect.
+
+    The DC to resist one of your spells equals 8 + your spellcasting ability modifier + your proficiency bonus.
+
+    Which modifier you use depends on your Class, as defined in the Spellcasting Ability section of each class that can cast spells.
+ammunition:
+  title: "Ammunition"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+
+    You can use a weapon that has the ammunition property to make a ranged attack only if you have ammunition to fire from the weapon. Each time you attack with the weapon, you expend one piece of ammunition. Drawing the ammunition from a quiver, case, or other container is part of the attack (you need a free hand to load a one-handed weapon). At the end of the battle, you can recover half your expended ammunition by taking a minute to search the battlefield.
+    
+    If you use a weapon that has the ammunition property to make a melee attack, you treat the weapon as an improvised weapon (see "Improvised Weapons" late in the section). A sling must be loaded to deal any damage when used in this way.
+finesse:
+  title: "Finesse"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+
+    When making an attack with a finesse weapon, you use your choice of your Strength or Dexterity modifier for the attack and damage rolls. You must use the same modifier for both rolls.
+heavy:
+  title: "Heavy"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+
+    Creatures that are Small or Tiny have disadvantage on attack rolls with heavy weapons. A heavy weapon's size and bulk make it too large for a Small or Tiny creature to use effectively.
+light:
+  title: "Light"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+
+    A light weapon is small and easy to handle, making it ideal for use when fighting with two weapons. See the rules for two-weapon fighting in chapter 9.
+loading:
+  title: "Loading"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+    
+    Because of the time required to load this weapon, you can fire only one piece of ammunition from it when you use an action, bonus action, or reaction to fire it, regardless of the number of attacks you can normally make.
+range:
+  title: "Range"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+    
+    A weapon that can be used to make a ranged attack has a range shown in parentheses after the ammunition or thrown property. The range lists two numbers. The first is the weapon's normal range in feet, and the second indicates the weapon's long range. When attacking a target beyond normal range, you have disadvantage on the attack roll. You can't attack a target beyond the weapon's long range.
+reach:
+  title: "Reach"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+
+    This weapon adds 5 feet to your reach when you attack with it. This property also determines your reach for opportunity attacks with a reach weapon.
+special:
+  title: "Special"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+
+    A weapon with the special property has unusual rules governing its use, explained in the weapon's description.
+
+    Lance.
+    You have disadvantage when you use a lance to attack a target within 5 feet of you. Also, a lance requires two hands to wield when you aren't mounted.
+
+    Net.
+    A Large or smaller creature hit by a net is restrained until it is freed. A net has no effect on creatures that are formless, or creatures that are Huge or larger. A creature can use its action to make a DC 10 Strength check, freeing itself or another creature within its reach on a success. Dealing 5 slashing damage to the net (AC 10) also frees the creature without harming it, ending the effect and destroying the net. When you use an action, bonus action, or reaction to attack with a net, you can make only one attack regardless of the number of attacks you can normally make.
+thrown:
+  title: "Thrown"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+
+    If a weapon has the thrown property, you can throw the weapon to make a ranged attack. If the weapon is a melee weapon, you use the same ability modifier for that attack roll and damage roll that you would use for a melee attack with the weapon. For example, if you throw a handaxe, you use your Strength, but if you throw a dagger, you can use either your Strength or your Dexterity, since the dagger has the finesse property.
+two-handed:
+  title: "Two-Handed"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+    
+    This weapon requires two hands to use. This property is relevant only when you attack with the weapon, not when you simply hold it.
+versatile:
+  title: "Versatile"
+  info: |
+    Page 146 of the Player's Handbook says the following:
+    
+    This weapon can be used with one or two hands. A damage value in parentheses appears with the property-the damage when the weapon is used with two hands to make a melee attack.
