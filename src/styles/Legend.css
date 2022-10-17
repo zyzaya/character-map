@@ -12,17 +12,25 @@
 }
 
 .legend {
+  text-align: center;
+  margin-top: 5px;
+}
+
+.legend_explanation {
+  font-size: medium;
+}
+
+.legend_display {
   display: flex;
   align-content: center;
   align-items: center;
   font-family: Interstate-bold; 
 }
 
-.legend > .sourced, .focused, .affected {
+.legend_sourced, .legend_focused, .legend_affected {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 256px;
   min-height: 36px;
-  text-align: center;
 }
