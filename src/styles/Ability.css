@@ -10,7 +10,7 @@ font-face {
 }
 
 .ability > .none:nth-child(odd) {
-  background-color: rgb(233, 232, 231);
+  background-color: rgb(232, 232, 232);
 }
 
 .score {

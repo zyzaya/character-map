@@ -3,6 +3,11 @@
   src: url(./fonts/Interstate-light.ttf);
 }
 
+#root {
+  max-width: 850px;
+  margin: auto;
+}
+
 .App {
   padding: 10px;
   margin: 0;
@@ -12,7 +17,7 @@
 }
 
 .focused {
-  background-color: rgb(200, 255, 200);
+  background-color: rgb(86, 197, 86);
 }
 
 .sourced {
@@ -20,5 +25,5 @@
 }
 
 .affected {
-  background-color: rgb(200, 200, 255);
+  background-color: rgb(118, 118, 226);
 }
