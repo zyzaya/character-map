@@ -1,0 +1,28 @@
+@media (min-width: 700px) {
+  .legend {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .legend_arrow {
+    max-width: 25px;
+  }
+}
+
+.legend {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  font-family: Interstate-bold; 
+}
+
+.legend > .sourced, .focused, .affected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 256px;
+  min-height: 36px;
+  text-align: center;
+}
